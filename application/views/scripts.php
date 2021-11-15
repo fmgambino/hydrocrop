@@ -96,8 +96,9 @@ client.on('message', (topic, message) => {
     var temp = splitted[0];
     var hum = splitted[1];
     var ph = splitted[2];
-    var niv = splitted[3];
-    var tempamb = splitted[4];
+    var tempamb = splitted[3];
+    var niv = splitted[4];
+    
     
     var switch1 = splitted[5];
     var switch2 = splitted[6];
