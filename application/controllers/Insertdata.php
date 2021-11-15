@@ -23,9 +23,9 @@ class Insertdata extends CI_Controller {
 			$temp = strip_tags($this->input->post('temp'));
 			$hum = strip_tags($this->input->post('hum'));
             $ph = strip_tags($this->input->post('ph'));
-           // $tempamb = strip_tags($this->input->post('tempamb'));
+            $tempamb = strip_tags($this->input->post('tempamb'));
 
-			$result = $this->Insertdata_model->insert($device_sn, $temp, $hum, $ph);
+			$result = $this->Insertdata_model->insert($device_sn, $temp, $hum, $ph, $tempamb);
 
 		}else{
 			//si la clave no coincide...
