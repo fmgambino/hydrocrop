@@ -362,7 +362,7 @@ var myChart4 = new Chart(ctx4, {
         labels: [<?php echo $dates ?>],
         datasets: [{
             label: '%',
-            data: [<?php echo $temps ?>],
+            data: [<?php echo $tempambs ?>],
             backgroundColor: [
                 'rgba(30, 170, 132, 0.2)',
             ],
