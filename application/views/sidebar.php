@@ -1,6 +1,6 @@
 <div class="mdl-layout__drawer">
   <header class="hc-sidebar">
-    <img src="<?php echo base_url('images/Logo-Hydrocrop.png')?>" alt="">
+    <img src="<?php echo base_url('images/Hydrocrop.png')?>" alt="">
   </header>
   <div class="scroll__wrapper" id="scroll__wrapper">
     <div class="scroller" id="scroller">
@@ -25,7 +25,7 @@
           <hr>
           <a class="mdl-navigation__link hc-text-white hc-grow" href="https://hydrocrop.net/">
             <i class="material-icons hc-text-white" role="presentation">link</i>
-            hydrocrop.net-hola
+            hydrocrop.net
           </a>
         </nav>
       </div>

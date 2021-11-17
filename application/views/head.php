@@ -41,6 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo base_url('css/application.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('css/myStyle.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('css/hydrocrop.css')?>"> 
+    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css')?>">
     
     <!-- endinject -->
 

@@ -1,5 +1,6 @@
 <!-- inject:js -->
 <script src="<?php echo base_url('js/d3.min.js')?>"></script>
+<script src="<?php echo base_url('js/bootstrap.js')?>"></script>
 <script src="<?php echo base_url('js/getmdl-select.min.js')?>"></script>
 <script src="<?php echo base_url('js/material.min.js')?>"></script>
 <script src="<?php echo base_url('js/nv.d3.min.js')?>"></script>

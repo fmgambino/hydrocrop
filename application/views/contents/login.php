@@ -34,6 +34,8 @@ type='text/css'>
 <link rel="stylesheet" href="<?php echo base_url('css/lib/getmdl-select.min.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('css/lib/nv.d3.min.css')?>">
 <link rel="stylesheet" href="<?php echo base_url('css/application.min.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('css/hydrocrop.css')?>"> 
+<link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css')?>">
 <!-- endinject -->
 
 
@@ -43,22 +45,23 @@ type='text/css'>
 <div class="mdl-layout mdl-js-layout color--gray is-small-screen login">
   <center><span class="mdl-card__title-text text-color--smooth-gray">Autores: Zenteno - Gambino  </span></center>
 
-    <main class="mdl-layout__content">
+    <main class="mdl-layout__content d-flex justify-content-center  ">
 
-        <div class="mdl-card mdl-card__login mdl-shadow--2dp">
-          <center><a href="https://flacuariot.com">
-          <img src="https://flacuariot.com/wp-content/uploads/2021/05/03-Logo-FlacuarIoT-e1621499415936.jpg"
+        <div class="mdl-card__login    br-0 border">
+          <center><a href="https://hydrocrop.net">
+          <img src="<?php echo base_url('images/Hydrocrop.png')?>"
           width="350" height="100"
           alt="texto alternativo de la imagen" /></a></center>
 
-          <div class="mdl-card__supporting-text color--dark-gray">
+          <div class="mdl-card__supporting-text color--dark-gray d-flex  ">
                   <form class="" action="<?php echo base_url('login/dologin')?>" method="post">
 
 
-                    <center><div class="mdl-grid">
+                    <center><div class="mdl-grid d-flex ">
                        <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                             <span class="mdl-card__title-text text-color--smooth-gray">HYDROCROP - Proyecto Final - UTN-FRT</span>
-                        </div></center>
+                        </div>
+                    </center>
                         <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
                             <span class="login-name text-color--white">Iniciar Sesión</span>
                             <span class="login-secondary-text text-color--smoke">Ingrese los datos para su acceso a la Plataforma IoT</span>
@@ -110,6 +113,7 @@ type='text/css'>
 <script src="<?php echo base_url('js/widgets/pie-chart/pie-charts-nvd3.min.js')?>"></script>
 <script src="<?php echo base_url('js/widgets/table/table.min.js')?>"></script>
 <script src="<?php echo base_url('js/widgets/todo/todo.min.js')?>"></script>
+<script src="<?php echo base_url('js/bootstrap.js')?>"></script>
 <!-- endinject -->
 
 </body>
