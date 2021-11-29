@@ -1,6 +1,8 @@
 main{
     padding: 20px;
     padding-bottom: 40px;
+    overflow-y:scroll;
+    background: #ffffffea !important;
 }
 .hc-sidebar {
     background: #08240d !important;    
@@ -32,15 +34,12 @@ main{
     border-left:2px solid #2DE14F !important;
 }
 
-main {
-    background: #f0eeef !important;
-}
-
 .mdl-layout__header{
     background-color: #2DE14F !important;
 }
 .mdl-card__title{
-    background: none !important;     
+    background: none !important;
+    text-align: center;     
 }
 
 .mdl-card__supporting-text{    
@@ -52,7 +51,8 @@ main {
 }
 .mdl-card{
     border-radius: 20%;
-    background: none!important;     
+    background: none!important;
+    margin-bottom: 30px;     
 }
 .hc-color-celeste{
     background: linear-gradient(to top right, #9af4fd , #00bcd2 )!important;
@@ -68,18 +68,32 @@ main {
     /*box-shadow: 2px 2px 2px 2px #fac883;*/
 }
 
+.hc-color-gris{
+    background: linear-gradient(to top right, #9b9b9b , #383633 ) !important;
+    border-radius: 5%;  
+    margin-top: 20px;  
+    /*box-shadow: 2px 2px 2px 2px #fac883;*/
+}
+
 .hc-color-verde{
     background: linear-gradient(to top right, #67d56f , #42a448 ) !important;
     border-radius: 5%;    
     margin-top: 20px;
     /*box-shadow: 2px 2px 2px 2px #67d56f;*/
 }
+
+.hc-color-azul{
+    background: linear-gradient(to top right, #7b76d3 , #622fda ) !important;
+    border-radius: 5%;    
+    margin-top: 20px;
+    /*box-shadow: 2px 2px 2px 2px #67d56f;*/
+}
+
 .hc-color-rojo{
     background: linear-gradient(to top right, #c07674 , #ca3c37 ) !important;
     border-radius: 5%;
     /*box-shadow: 2px 2px 2px 2px #c07674;*/
-    height: 100%;
-    
+    height: 100%;    
 }
 .hc-box-a{
     display: flow-root;
@@ -107,6 +121,18 @@ main {
     color: #00bcd2 ;
 }
 
+.hc-color-text-verde{
+    color: #00d235 ;
+}
+
+.hc-color-text-gris{
+    color: #343c3c ;
+}
+
+.hc-color-text-negro{
+    color: #343c3c ;
+}
+
 .hc-color-text-blanco {
     color: #ffffff !important;
 }
@@ -119,13 +145,18 @@ main {
 .weather-description::before{
     content: none !important;
 }
-
+/* color letras de widget temperatura */
 .booked-prime-days-data .booked-wzs-pd-val{
-    color: #ffffff !important;
+    color: #050505 !important;
 }
 .booked-prime-days-data .booked-pd-today-extreme {
-    color: #ffffff !important;
+    color: #040303 !important;
 }
+
+.booked-prime-days-data .booked-pd-nidw{
+    color: rgb(0, 0, 0) !important;
+}
+/*----------------------------------*/
 canvas{
     padding-right: 20px;
     padding-left: 20px;
@@ -166,6 +197,19 @@ canvas{
     float: none !important;
 }
 
+.mdl-textfield:not(.is-focused) .mdl-textfield__label, .mdl-textfield:not(.mdl-textfield--floating-label) .mdl-textfield__label {
+    color: #f8f9fa!important;
+}
+
+.text-color--smooth-gray{
+    color: white !important;
+}
+
+.hc-heigth{
+    height: 10%;
+}
+
+
 /*----------planytilla profile--------- */
 .hc-box-profile{
     text-align: center;
@@ -175,3 +219,12 @@ canvas{
     margin-bottom: 20px;
     padding-bottom: 20px;    
 }
+
+.mdl-layout__header-row .avatar-dropdown>span {
+    color: #000000 !important;
+}
+
+.mdl-button--icon .material-icons{
+    color: #000000 !important;
+}
+

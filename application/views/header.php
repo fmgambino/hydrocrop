@@ -2,7 +2,7 @@
     <div class="mdl-layout__header-row">
         <div class="mdl-layout-spacer"></div>
         <!-- Search-->
-        <select id="device_select" onchange="change_device()" class="" name="" style="background:transparent;color:#000000">
+        <select id="device_select" class="btn btn-outline-dark"  onchange="change_device()" class="" name="" >
           <option value="">Select Device</option>
           <?php foreach ($devices as $device ) { ?>
             <option value="<?php echo $device['device_id'] ?>" <?php if ($_SESSION['selected_device'] == $device['device_id']){echo "selected";} ?>><?php echo $device['device_alias']?></option>
@@ -11,8 +11,8 @@
 
 
 
-        <div class="avatar-dropdown" id="icon">
-            <span><?php echo $_SESSION['user_name']; ?></span>
+        <div class="avatar-dropdown " id="icon">
+            <span class="hc-color-text-negro"><?php echo $_SESSION['user_name']; ?></span>
             <img src="<?php echo $_SESSION['user_image']; ?>">
         </div>
         <!--
@@ -66,7 +66,7 @@
         Account dropdawn-->
         <button id="more"
                 class="mdl-button mdl-js-button mdl-button--icon">
-            <i class="material-icons">more_vert</i>
+            <i class="material-icons hc-text-negro">more_vert</i>
         </button>
 
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-shadow--2dp settings-dropdown"
