@@ -72,21 +72,21 @@ main {
     /*box-shadow: 2px 2px 2px 2px #fac883;*/
 }
 
-.hc-color-gris{
+.hc-color-gris {
     background: linear-gradient(to top right, #9b9b9b , #383633 ) !important;
     border-radius: 5%;  
     margin-top: 20px;  
     /*box-shadow: 2px 2px 2px 2px #fac883;*/
 }
 
-.hc-color-verde{
+.hc-color-verde {
     background: linear-gradient(to top right, #67d56f , #42a448 ) !important;
     border-radius: 5%;    
     margin-top: 20px;
     /*box-shadow: 2px 2px 2px 2px #67d56f;*/
 }
 
-.hc-color-azul{
+.hc-color-azul {
     background: linear-gradient(to top right, #7b76d3 , #622fda ) !important;
     border-radius: 5%;    
     margin-top: 20px;
