@@ -156,7 +156,7 @@
         <!-- Nivel CO2 -->
         <div class="col-6 col-md-4">
           <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris">
+            <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris ">
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">CO2</h2>
                 <i class="material-icons">local_fire_department</i>
