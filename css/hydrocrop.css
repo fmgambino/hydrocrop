@@ -34,6 +34,13 @@ main{
     border-left:2px solid #2DE14F !important;
 }
 
+<<<<<<< HEAD
+=======
+main {
+    background: #f0e#1e1f20 !important;
+}
+
+>>>>>>> 6c00c4299453f26247c45deb3f5d5ac5fb1b2538
 .mdl-layout__header{
     background-color: #2DE14F !important;
 }
@@ -55,7 +62,7 @@ main{
     margin-bottom: 30px;     
 }
 .hc-color-celeste{
-    background: linear-gradient(to top right, #9af4fd , #00bcd2 )!important;
+    background: linear-gradient(to top right, #9af4fd , #1960fa )!important;
     border-radius: 5%;
     margin-top: 20px;
     

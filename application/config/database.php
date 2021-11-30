@@ -77,9 +77,9 @@ $db['default']['options'] = array(PDO::ATTR_TIMEOUT => 5000);
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'hydrocrop',
+	'username' => 'u689027418_hydrocrop',
+	'password' => 'fGmZ0381',
+	'database' => 'u689027418_hydrocrop',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

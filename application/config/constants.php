@@ -9,8 +9,8 @@ defined('GET_DATA_PASSWORD') OR define('GET_DATA_PASSWORD', '420285');
 defined('INSERT_DATA_PASSWORD') OR define('INSERT_DATA_PASSWORD', '285289');
 
 //credenciales MQTT que obtendras del nodo creado en IoTicos.org
-defined('MQTT_USER') OR define('MQTT_USER', '6aL4uU9b5axRmJv');
-defined('MQTT_PASSWORD') OR define('MQTT_PASSWORD', 'zPPJmrLtUGuFcln');
+defined('MQTT_USER') OR define('MQTT_USER', 'fernando');
+defined('MQTT_PASSWORD') OR define('MQTT_PASSWORD', 'fernando');
 defined('ROOT_TOPIC') OR define('ROOT_TOPIC', '0sxMx2GGdLQKCdt');
 
 /*

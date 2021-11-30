@@ -46,7 +46,7 @@ class Main extends CI_Controller {
 			$temps .= $d['data_temp'].",";
 			$hums .= $d['data_hum'].",";
           //  $phs .= $d['data_ph'].",";
-           // $tempambs .= $d['data_tempamb'].",";
+           // $tempambs .= $d['data_tempamb'].","; 
 			$dates .= "'".$d['data_date']."',";
 		}
 
