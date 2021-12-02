@@ -213,6 +213,9 @@ canvas{
     height: 10%;
 }
 
+.hc-text-center{
+    text-align: center;
+}
 
 /*----------planytilla profile--------- */
 .hc-box-profile{
@@ -232,3 +235,46 @@ canvas{
     color: #000000 !important;
 }
 
+/*-----------login------------*/
+
+.mdl-textfield input{
+    color:rgb(0, 0, 0);
+}
+
+.mdl-textfield__input{
+    border-bottom : 1px solid rgba(0,0,0,1)
+}
+.mdl-textfield:not(.is-focused) .mdl-textfield__label, .mdl-textfield:not(.mdl-textfield--floating-label) .mdl-textfield__label{
+    color: rgb(0, 0, 0) !important;
+}
+
+.hc-form-control {
+    margin-bottom: 20px;
+    background-color: none !important;
+    text-align: center;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;        
+    background-clip: padding-box;        
+    
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;      
+}
+
+.hc-form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #92d050;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(30, 255, 0, 0.446);
+    border-radius: 0.25rem;
+  }
+
+.hc-box-login{
+    margin-top: 100px;
+    border-radius: 10px;
+
+}

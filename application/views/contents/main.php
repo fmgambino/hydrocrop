@@ -50,7 +50,7 @@
       </div>
       <div class="row ">
         <!-- TEMP -->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
             <div class="mdl-card__supporting-text mdl-card--expand hc-color-naranja">
               <div class="mdl-card__title">
@@ -137,7 +137,7 @@
           </div>
         </div>
         <!-- HUM-->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
             <div class="mdl-card__supporting-text mdl-card--expand hc-color-celeste">
               <div class="mdl-card__title">
@@ -154,11 +154,9 @@
           </div>
         </div>
         <!-- Nivel CO2 -->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris " style="background: linear-gradient(to top right, #9b9b9b , #383633 ) !important;
-    border-radius: 5%;  
-    margin-top: 20px; ">
+            <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris ">
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">CO2</h2>
                 <i class="material-icons">local_fire_department</i>
@@ -249,7 +247,7 @@
           </div>
         </div>
         <!-- pH -->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
             <div class="mdl-card__supporting-text mdl-card--expand hc-color-verde">
               <div class="mdl-card__title">
@@ -264,7 +262,7 @@
           </div>
         </div>
         <!-- Conductividad -->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
             <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul">
               <div class="mdl-card__title">
@@ -276,7 +274,7 @@
           </div>
         </div>
         <!-- H2O -->
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
             <div class="mdl-card__supporting-text mdl-card--expand hc-color-celeste">
               <div class="mdl-card__title">
