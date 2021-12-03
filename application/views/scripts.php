@@ -67,7 +67,7 @@ const options = {
 }
 
 // WebSocket connect url
-const WebSocket_URL = 'wss://webiot.com.ar:8094/mqtt';
+const WebSocket_URL = 'wss://ioticos.org:8094/mqtt';
 const client = mqtt.connect(WebSocket_URL, options)
 
 var device_topic = '<?php echo ROOT_TOPIC ."/". $_SESSION['selected_topic']."/" ?>';
@@ -103,6 +103,7 @@ client.on('message', (topic, message) => {
     
     var switch1 = splitted[5];
     var switch2 = splitted[6];
+    var switch3 = splitted[7];
 
     
 
@@ -127,6 +128,12 @@ client.on('message', (topic, message) => {
       $("#display_sw2").prop('checked', true);
     }else{
       $("#display_sw2").prop('checked',"" );
+    }
+    
+    if(switch3 == "1"){
+      $("#display_sw3").prop('checked', true);
+    }else{
+      $("#display_sw3").prop('checked',"" );
     }
 
 
@@ -158,6 +165,15 @@ function sw2_change(){
     client.publish(device_topic + 'actions/sw2',"1");
   }else{
     client.publish(device_topic + 'actions/sw2',"0");
+  }
+}
+
+function sw3_change(){
+  if ($('#display_sw3').is(":checked"))
+  {
+    client.publish(device_topic + 'actions/sw3',"1");
+  }else{
+    client.publish(device_topic + 'actions/sw3',"0");
   }
 }
 

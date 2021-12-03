@@ -327,7 +327,7 @@
                   <span class="mdl-list__item-secondary-content">
                     <!-- SWITCH-->
                     <label class="switch">
-                      <input onchange="sw2_change()" type="checkbox" id="display_sw2">
+                      <input onchange="sw3_change()" type="checkbox" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
                   </span>
@@ -411,7 +411,7 @@
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '° C',
-        data: [<?php echo $temps ?>],
+        data: [<?php echo $tempambs ?>],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
         ],
@@ -490,13 +490,13 @@
     }
   });
 
-  /*var myChart4 = new Chart(ctx4, {
+  var myChart4 = new Chart(ctx4, {
       type: 'line',
       data: {
           labels: [<?php echo $dates ?>],
           datasets: [{
               label: '%',
-              data: [<?php echo $tempambs ?>],
+              data: [<?php echo $temp ?>],
               backgroundColor: [
                   'rgba(30, 170, 132, 0.2)',
               ],
@@ -516,5 +516,5 @@
               }]
           }
       }
-  });*/
+  });
 </script>

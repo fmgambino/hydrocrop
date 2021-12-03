@@ -32,7 +32,7 @@ class Main extends CI_Controller {
 		//es que traeremos todos los datos de la tabla data que pertenezcan al id del dispo seleccionado.
 		$device_data = $this->Main_model->get_data($user_id, $_SESSION['selected_device']);
 
-		$temps="";
+		$co2="";
 		$hums = "";
         $phs = "";
         $tempambs = "";
@@ -43,15 +43,16 @@ class Main extends CI_Controller {
 		//entonces armamos un string para las temperaturas
 		//otro para las humedades, y otro para las fechas, ya te darás cuenta de qué tendrás que modificar si usas más variables...
 		foreach ($device_data as $d) {
-			$temps .= $d['data_temp'].",";
+			$c02 .= $d['data_co2'].",";
 			$hums .= $d['data_hum'].",";
-          //  $phs .= $d['data_ph'].",";
+			
+            $phs .= $d['data_ph'].",";
            // $tempambs .= $d['data_tempamb'].","; 
 			$dates .= "'".$d['data_date']."',";
 		}
 
 		//como todo dato que necesitemos pasar a la vista lo prepararemos en el array $data
-		$data['temps'] = $temps;
+		$data['co2'] = $co2;
 		$data['hums'] = $hums;
         $data['phs'] = $phs;
         $data['$tempambs'] = $tempambs;
