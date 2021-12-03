@@ -327,7 +327,7 @@
                   <span class="mdl-list__item-secondary-content">
                     <!-- SWITCH-->
                     <label class="switch">
-                      <input onchange="sw3_change()" type="checkbox" id="display_sw3">
+                      <input onchange="sw3_change()" type="button" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
                   </span>
