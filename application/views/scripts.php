@@ -107,8 +107,9 @@ client.on('message', (topic, message) => {
 
     
 
+    
+    $("#display_co2").html(co2);
     $("#display_hum").html(hum);
-    $("#display_temp").html(temp);
     $("#display_ph").html(ph);
     $("#display_tempamb").html(tempamb);
     
