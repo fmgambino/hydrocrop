@@ -94,7 +94,7 @@ client.on('message', (topic, message) => {
   if (topic == device_topic+"data"){
     var splitted = message.toString().split(",");
 
-    var temp = splitted[0];
+    var co2 = splitted[0];
     var hum = splitted[1];
     var ph = splitted[2];
     var tempamb = splitted[3];
