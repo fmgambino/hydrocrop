@@ -172,7 +172,7 @@
 
 
               </div>
-              <p id="display_ph" class="weather-temperature">--</p>
+              <p id="display_tempamb" class="weather-temperature">--</p>
 
             </div>
           </div>
