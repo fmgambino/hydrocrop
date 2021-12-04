@@ -58,50 +58,8 @@
                 <i class="material-icons">thermostat</i>
               </div>
               <div class="mdl-card__supporting-text mdl-card--expand">
-                <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
-                <!-- weather widget start
-                <div id="m-booked-prime-days-99676">
-                  <div class="weather-customize widget-type-prime-days">
-                    <div class="booked-prime-days-in">
-                      <div class="booked-prime-days-data">
-                        <div class="booked-pd-today">
-                          <div class="booked-pd-today-img wrz-03 "></div>
-                          <div class="booked-pd-today-temperature">
-                            <div class="booked-wzs-pd-val">
-                              <div class="booked-wzs-pd-number"><span class="plus">+</span>25</div>
-                              <div class="booked-wzs-pd-dergee">
-                                <div class="booked-wzs-pd-dergee-val">&deg;</div>
-                                <div class="booked-wzs-pd-dergee-name">C</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="booked-pd-today-extreme">
-                            <div class="booked-pd booked-pd-h"><span>Alta:</span><span class="plus">+</span>32</div>
-                            <div class="booked-pd booked-pd-l"><span>Baja:</span><span class="plus">+</span>16</div>
-                          </div>
-                        </div>
-                        <div class="booked-pd-ndays">
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-03"></div>
-                            <div class="booked-pd-nidw">Dom</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Lun</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Mar</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Mié</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
+                <p id="display_ph" class="weather-temperature">--<sup>&deg;</sup></p>
+                
                 <script type="text/javascript">
                   var css_file = document.createElement("link");
                   var widgetUrl = location.href;
@@ -165,49 +123,7 @@
               <div class="mdl-card__supporting-text mdl-card--expand">
                 <p id="display_co2" class="weather-temperature">--<sup>&deg;</sup></p>
 
-                <!-- weather widget start 
-                <div id="m-booked-prime-days-99676">
-                  <div class="weather-customize widget-type-prime-days">
-                    <div class="booked-prime-days-in">
-                      <div class="booked-prime-days-data">
-                        <div class="booked-pd-today">
-                          <div class="booked-pd-today-img wrz-03 "></div>
-                          <div class="booked-pd-today-temperature">
-                            <div class="booked-wzs-pd-val">
-                              <div class="booked-wzs-pd-number"><span class="plus">+</span>25</div>
-                              <div class="booked-wzs-pd-dergee">
-                                <div class="booked-wzs-pd-dergee-val">&deg;</div>
-                                <div class="booked-wzs-pd-dergee-name">C</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="booked-pd-today-extreme">
-                            <div class="booked-pd booked-pd-h"><span>Alta:</span><span class="plus">+</span>32</div>
-                            <div class="booked-pd booked-pd-l"><span>Baja:</span><span class="plus">+</span>16</div>
-                          </div>
-                        </div>
-                        <div class="booked-pd-ndays">
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-03"></div>
-                            <div class="booked-pd-nidw">Dom</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Lun</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Mar</div>
-                          </div>
-                          <div class="booked-pd-nitem">
-                            <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                            <div class="booked-pd-nidw">Mié</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
+               
                 <script type="text/javascript">
                   var css_file = document.createElement("link");
                   var widgetUrl = location.href;
@@ -530,7 +446,7 @@
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '%',
-        data: [<?php echo $temp ?>],
+        data: [<?php echo $co2s ?>],
         backgroundColor: [
           'rgba(30, 170, 132, 0.2)',
         ],
