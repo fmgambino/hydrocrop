@@ -32,30 +32,30 @@ class Main extends CI_Controller {
 		//es que traeremos todos los datos de la tabla data que pertenezcan al id del dispo seleccionado.
 		$device_data = $this->Main_model->get_data($user_id, $_SESSION['selected_device']);
 
-		$co2="";
+		$co2s="";
+		$tempambs = "";
 		$hums = "";
         $phs = "";
-        $tempambs = "";
-		$dates="";
+        $dates="";
         
 
 		//la librería charts.js que usamos para dibujar los charts, nos pide los datos, separados por coma,
 		//entonces armamos un string para las temperaturas
 		//otro para las humedades, y otro para las fechas, ya te darás cuenta de qué tendrás que modificar si usas más variables...
 		foreach ($device_data as $d) {
-			$c02 .= $d['data_co2'].",";
+			$co2s .= $d['data_co2'].",";
+			$tempambs .= $d['data_tempamb'].","; 
 			$hums .= $d['data_hum'].",";
-			
-            $phs .= $d['data_ph'].",";
-           // $tempambs .= $d['data_tempamb'].","; 
-			$dates .= "'".$d['data_date']."',";
+			$phs .= $d['data_ph'].",";
+         	$dates .= "'".$d['data_date']."',";
 		}
 
 		//como todo dato que necesitemos pasar a la vista lo prepararemos en el array $data
-		$data['co2'] = $co2;
+		$data['co2s'] = $co2s;
+		$data['$tempambs'] = $tempambs;
 		$data['hums'] = $hums;
         $data['phs'] = $phs;
-        $data['$tempambs'] = $tempambs;
+        
 		$data['dates'] = $dates;
 
 		//ya tenemos todo lo necesario para cargar las partes del panel, mostrarla y pasarle "DATA" a cada parte que necesite de estos "DATA"
