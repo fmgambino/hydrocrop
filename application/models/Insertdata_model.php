@@ -4,10 +4,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Insertdata_model extends CI_Model
 {
 
-  public function insert($device_sn, $co2, $tempamb, $ph, $hum){
+  public function insert($device_sn, $co2, $tempamb, $hum, $ph ){
     $data = array(
       'data_device_sn' => $device_sn,
-      'data_c02' => $c02,
+      'data_co2' => $co2,
       'data_tempamb' => $tempamb,
       'data_hum' => $hum,
       'data_ph' => $ph,
