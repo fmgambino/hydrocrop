@@ -58,7 +58,7 @@
                 <i class="material-icons">thermostat</i>
               </div>
               <div class="mdl-card__supporting-text mdl-card--expand">
-                <p id="display_ph" class="weather-temperature">--<sup>&deg;</sup></p>
+                <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
                 
                 <script type="text/javascript">
                   var css_file = document.createElement("link");
@@ -172,7 +172,7 @@
 
 
               </div>
-              <p id="display_tempamb" class="weather-temperature">--</p>
+              <p id="display_ph" class="weather-temperature">--</p>
 
             </div>
           </div>

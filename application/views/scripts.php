@@ -95,9 +95,9 @@ client.on('message', (topic, message) => {
     var splitted = message.toString().split(",");
 
     var co2 = splitted[0];
-    var hum = splitted[1];
-    var ph = splitted[2];
-    var tempamb = splitted[3];
+    var tempamb = splitted[1];
+    var hum = splitted[2];
+    var ph = splitted[3];
     var niv = splitted[4];
     
     
@@ -109,9 +109,10 @@ client.on('message', (topic, message) => {
 
     
     $("#display_co2").html(co2);
+    $("#display_tempamb").html(tempamb);
     $("#display_hum").html(hum);
     $("#display_ph").html(ph);
-    $("#display_tempamb").html(tempamb);
+    
     
     if(niv==1){
       $("#display_niv").html("OPTIMO");
