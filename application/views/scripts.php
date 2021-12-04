@@ -89,7 +89,7 @@ client.on('connect', () => {
 })
 
 client.on('message', (topic, message) => {
- // console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
+ console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
   if (topic == device_topic+"data"){
     var splitted = message.toString().split(",");
