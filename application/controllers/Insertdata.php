@@ -20,12 +20,13 @@ class Insertdata extends CI_Controller {
 
 			//recibimos los datos que nos envía el dispositivo, mediante post...
 			$device_sn = strip_tags($this->input->post('sn'));
-			$temp = strip_tags($this->input->post('co2'));
+			$co2 = strip_tags($this->input->post('co2'));
+			$tempamb = strip_tags($this->input->post('tempamb'));
 			$hum = strip_tags($this->input->post('hum'));
             $ph = strip_tags($this->input->post('ph'));
-            $tempamb = strip_tags($this->input->post('tempamb'));
+            
 
-			$result = $this->Insertdata_model->insert($device_sn, $temp, $hum, $ph, $tempamb);
+			$result = $this->Insertdata_model->insert($device_sn, $co2, $tempamb, $hum, $ph );
 
 		}else{
 			//si la clave no coincide...
