@@ -34,8 +34,8 @@ class Main extends CI_Controller {
 
 		$co2s="";
 		$tempambs = "";
-		//$hums = "";
-        //$phs = "";
+		$hums = "";
+        $phs = "";
         $dates="";
         
 
@@ -45,16 +45,16 @@ class Main extends CI_Controller {
 		foreach ($device_data as $d) {
 			$co2s .= $d['data_co2'].",";
 			$tempambs .= $d['data_tempamb'].","; 
-			//$hums .= $d['data_hum'].",";
-			//$phs .= $d['data_ph'].",";
+			$hums .= $d['data_hum'].",";
+			$phs .= $d['data_ph'].",";
          	$dates .= "'".$d['data_date']."',";
 		}
 
 		//como todo dato que necesitemos pasar a la vista lo prepararemos en el array $data
 		$data['co2s'] = $co2s;
 		$data['$tempambs'] = $tempambs;
-		//$data['hums'] = $hums;
-       // $data['phs'] = $phs;
+		$data['hums'] = $hums;
+        $data['phs'] = $phs;
         
 		$data['dates'] = $dates;
 
