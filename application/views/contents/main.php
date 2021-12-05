@@ -361,7 +361,7 @@
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '° C',
-        data: [<?php echo $co2s ?>],
+        data: [<?php echo $tempambs ?>],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
         ],

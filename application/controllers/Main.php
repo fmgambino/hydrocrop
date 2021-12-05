@@ -43,15 +43,15 @@ class Main extends CI_Controller {
 		//entonces armamos un string para las temperaturas
 		//otro para las humedades, y otro para las fechas, ya te darás cuenta de qué tendrás que modificar si usas más variables...
 		foreach ($device_data as $d) {
-			$co2s .= $d['data_co2'].",";
-			//$tempambs .= $d['data_tempamb'].","; 
+			//$co2s .= $d['data_co2'].",";
+			$tempambs .= $d['data_tempamb'].","; 
 			$hums .= $d['data_hum'].",";
 			//$phs .= $d['data_ph'].",";
          	$dates .= "'".$d['data_date']."',";
 		}
 
 		//como todo dato que necesitemos pasar a la vista lo prepararemos en el array $data
-		$data['co2s'] = $co2s;
+		//$data['co2s'] = $co2s;
 		$data['$tempambs'] = $tempambs;
 		$data['hums'] = $hums;
         $data['phs'] = $phs;
