@@ -309,6 +309,19 @@
           </div>
           <!-- Table-->
           
+                    <!-- Table-->
+          <!-- Line chart 2-->
+          <div class="">
+            <div class="mdl-card mdl-shadow--2dp line-chart">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text hc-color-text-naranja">Tem. Hambiente</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <canvas id="my_chart2" width="300" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+          <!-- Table-->
 
 
           
@@ -320,7 +333,7 @@
 
 <script>
   var ctx = document.getElementById('my_chart').getContext('2d');
- // var ctx2 = document.getElementById('my_chart2').getContext('2d');
+  var ctx2 = document.getElementById('my_chart2').getContext('2d');
   //var ctx3 = document.getElementById('my_chart3').getContext('2d');
   //var ctx4 = document.getElementById('my_chart4').getContext('2d');
 
@@ -352,14 +365,14 @@
     }
   });
 
-/*
+
   var myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '%',
-        data: [<?php echo $hums ?>],
+        data: [<?php echo $tempambs ?>],
         backgroundColor: [
           'rgba(30, 170, 132, 0.2)',
         ],
@@ -380,7 +393,7 @@
       }
     }
   });
-
+/*
   var myChart3 = new Chart(ctx3, {
     type: 'line',
     data: {
