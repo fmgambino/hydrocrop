@@ -372,7 +372,7 @@
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '%',
-        data: [<?php echo $tempambs ?>],
+        data: [<?php echo $hum ?>],
         backgroundColor: [
           'rgba(30, 170, 132, 0.2)',
         ],
