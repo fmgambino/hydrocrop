@@ -353,7 +353,7 @@
   var ctx = document.getElementById('my_chart').getContext('2d');
   var ctx2 = document.getElementById('my_chart2').getContext('2d');
   var ctx3 = document.getElementById('my_chart3').getContext('2d');
-  var ctx4 = document.getElementById('my_chart4').getContext('2d');
+  //var ctx4 = document.getElementById('my_chart4').getContext('2d');
 
   var myChart = new Chart(ctx, {
     type: 'line',
@@ -440,7 +440,7 @@
     }
   });
 
-
+/*
   var myChart4 = new Chart(ctx4, {
     type: 'line',
     data: {
@@ -469,6 +469,6 @@
     }
   });
 
-  
+  */
 
 </script>
