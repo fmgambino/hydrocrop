@@ -295,11 +295,12 @@
         </div>
 
         <div class="col-12 col-md-8 hc-box-b">
+          <!-- Table-->
           <!-- Line chart-->
           <div class="">
             <div class="mdl-card mdl-shadow--2dp line-chart">
               <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-naranja">Temp. Ambiente</h2>
+                <h2 class="mdl-card__title-text hc-color-text-naranja">Nivel CO2</h2>
               </div>
               <div class="mdl-card__supporting-text">
                 <canvas id="my_chart" width="300" height="300"></canvas>
@@ -307,42 +308,10 @@
             </div>
           </div>
           <!-- Table-->
-          <!-- Line chart2-->
-          <div class="">
-            <div class="mdl-card mdl-shadow--2dp line-chart">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-celeste">Humedad</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <canvas id="my_chart2" width="300" height="300"></canvas>
-              </div>
-            </div>
-          </div>
-          <!-- Table-->
-          <!-- Line chart3-->
-          <div class="">
-            <div class="mdl-card mdl-shadow--2dp line-chart">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-verde">PH</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <canvas id="my_chart3" width="300" height="300"></canvas>
-              </div>
-            </div>
-          </div>
-          <!-- Table-->
-          <!-- Line chart4-->
-          <div class="">
-            <div class="mdl-card mdl-shadow--2dp line-chart">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-gris">Nivel CO2</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <canvas id="my_chart4" width="300" height="300"></canvas>
-              </div>
-            </div>
-          </div>
-          <!-- Table-->
+          
+
+
+          
         </div>
       </div>
     </div>
@@ -351,8 +320,8 @@
 
 <script>
   var ctx = document.getElementById('my_chart').getContext('2d');
-  var ctx2 = document.getElementById('my_chart2').getContext('2d');
-  var ctx3 = document.getElementById('my_chart3').getContext('2d');
+ // var ctx2 = document.getElementById('my_chart2').getContext('2d');
+  //var ctx3 = document.getElementById('my_chart3').getContext('2d');
   //var ctx4 = document.getElementById('my_chart4').getContext('2d');
 
   var myChart = new Chart(ctx, {
@@ -361,7 +330,7 @@
       labels: [<?php echo $dates ?>],
       datasets: [{
         label: '° C',
-        data: [<?php echo $tempambs ?>],
+        data: [<?php echo $co2s ?>],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
         ],
@@ -383,7 +352,7 @@
     }
   });
 
-
+/*
   var myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
@@ -440,7 +409,7 @@
     }
   });
 
-/*
+
   var myChart4 = new Chart(ctx4, {
     type: 'line',
     data: {
