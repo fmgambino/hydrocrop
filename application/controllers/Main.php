@@ -44,7 +44,7 @@ class Main extends CI_Controller {
 		//otro para las humedades, y otro para las fechas, ya te darás cuenta de qué tendrás que modificar si usas más variables...
 		foreach ($device_data as $d) {
 			$co2s .= $d['data_co2'].",";
-			//$tempambs .= $d['data_tempamb'].","; 
+			$tempambs .= $d['data_tempamb'].","; 
 			$hums .= $d['data_hum'].",";
 			$phs .= $d['data_ph'].",";
          	$dates .= "'".$d['data_date']."',";
