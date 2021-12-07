@@ -60,7 +60,7 @@
               <center>
                 <div class="mdl-grid d-flex ">
                   <div class="col-12 mt-4">
-                    <span class="mdl-card__title-text  hc-color-text-negro">HYDROCROP - Proyecto Final - UTN-FRT</span>
+                    <span class="mdl-card__title-text  hc-color-text-negro">Proyecto Final - UTN-FRT</span>
                   </div>
               </center>
               <div class="col-12  mt-4">
