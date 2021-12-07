@@ -184,6 +184,18 @@ function slider_change(){
   client.publish(device_topic + 'actions/slider',value);
 }
 
+//SE CREA FUNCION PARA ENVIO DE DATOS DEL FORMULARIO PARAMETROS
+/*
+function parametros(){
+  if ($('#boton').is(":checked"))
+  {
+    pvalue = $('ptemp','phum','pco', 'ptime').val();
+    client.publish(device_topic + 'actions/pdatos',pvalue);
+  }else{
+    client.publish(device_topic + 'actions/pdatos',"0");
+  }
+}
+*/
 </script>
 <!-- endinject -->
 
