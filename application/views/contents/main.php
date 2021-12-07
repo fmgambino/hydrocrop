@@ -59,7 +59,7 @@
               </div>
               <div class="mdl-card__supporting-text mdl-card--expand">
                 <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
-                
+
                 <script type="text/javascript">
                   var css_file = document.createElement("link");
                   var widgetUrl = location.href;
@@ -123,7 +123,7 @@
               <div class="mdl-card__supporting-text mdl-card--expand">
                 <p id="display_co2" class="weather-temperature">--<sup>&deg;</sup></p>
 
-               
+
                 <script type="text/javascript">
                   var css_file = document.createElement("link");
                   var widgetUrl = location.href;
@@ -192,7 +192,7 @@
         <!-- H2O -->
         <div class="col-12 col-md-6 col-xl-4">
           <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-celeste">
+            <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul-2">
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text ">Nivel H2O</h2>
                 <i class="material-icons">water</i>
@@ -261,33 +261,51 @@
                 </div>
                 <form>
                   <li class="mdl-list__item list__item--border-top">
-                    <span class="mdl-list__item-primary-content list__item-text">TEMPERATURA</span>
-                    <span class="mdl-list__item-secondary-content">
-                      <input onchange="" id="" class="form-control" placeholder="Temperatura Max en °C" type="text">
-                    </span>
+                    <div style="width: 50%; ">
+                      <span class="mdl-list__item-primary-content list__item-text hc-ancho">TEMPERATURA</span>
+                    </div>
+                    <div style="width: 50%; padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input onchange="" id="" class="form-control" placeholder="Temp. Max en °C" type="text">
+                      </span>
+                    </div>
                   </li>
 
                   <li class="mdl-list__item list__item--border-top">
-                    <span class="mdl-list__item-primary-content list__item-text">HUMEDAD</span>
-                    <span class="mdl-list__item-secondary-content">
-                      <input onchange="" id="" class="form-control" placeholder="Humedad Max en %" type="text">
-                    </span>
+                    <div style="width: 50%; ">
+                      <span class="mdl-list__item-primary-content list__item-text">HUMEDAD</span>
+                    </div>
+                    <div style="width: 50%; padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input onchange="" id="" class="form-control" placeholder="Hum. Max en %" type="text">
+                      </span>
+                    </div>
                   </li>
 
                   <li class="mdl-list__item list__item--border-top">
-                    <span class="mdl-list__item-primary-content list__item-text">CO2</span>
-                    <span class="mdl-list__item-secondary-content">
-                      <input onchange="" id="" class="form-control" placeholder="CO2 Max en PPM" type="text">
-                    </span>
+                    <div style="width: 50%; ">
+                      <span class="mdl-list__item-primary-content list__item-text">CO2</span>
+                    </div>
+                    <div style="width: 50%; padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input onchange="" id="" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                      </span>
+                    </div>
                   </li>
 
                   <li class="mdl-list__item list__item--border-top">
-                    <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE MUESTREO</span>
-                    <span class="mdl-list__item-secondary-content ">
-                      <input onchange="" id="" class="form-control " placeholder="Tiempo en minutos" type="text">
-                    </span> 
+                    <div style="width: 50%; text-align: initial; ">
+                      <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE MUESTREO</span>
+                    </div>
+                    <div style="width: 50%; padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content ">
+                        <input onchange="" id="" class="form-control " placeholder="Tiempo en min." type="text">
+                      </span>
+                    </div>
                   </li>
+
                   <button type="submit" class="btn btn-primary">Enviar</button>
+
                 </form>
               </ul>
             </div>
@@ -308,8 +326,8 @@
             </div>
           </div>
           <!-- Table-->
-          
-                    <!-- Table-->
+
+          <!-- Table-->
           <!-- Line chart 2-->
           <div class="">
             <div class="mdl-card mdl-shadow--2dp line-chart">
@@ -321,10 +339,9 @@
               </div>
             </div>
           </div>
-          <!-- Table-->
+          <!-- Table--> 
 
 
-          
         </div>
       </div>
     </div>
@@ -393,13 +410,13 @@
       }
     }
   });
-/*
+ /*
   var myChart3 = new Chart(ctx3, {
     type: 'line',
     data: {
       labels: [<?php echo $dates ?>],
       datasets: [{
-        label: '%',
+        label: 'pH',
         data: [<?php echo $phs ?>],
         backgroundColor: [
           'rgba(30, 170, 132, 0.2)',
@@ -421,35 +438,34 @@
       }
     }
   });
+ 
 
-
-  var myChart4 = new Chart(ctx4, {
-    type: 'line',
-    data: {
-      labels: [<?php echo $dates ?>],
-      datasets: [{
-        label: '%',
-        data: [<?php echo $co2s ?>],
-        backgroundColor: [
-          'rgba(30, 170, 132, 0.2)',
-        ],
-        borderColor: [
-          'rgba(30, 170, 132, 1)',
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      maintainAspectRatio: false,
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
+      var myChart4 = new Chart(ctx4, {
+        type: 'line',
+        data: {
+          labels: [<?php echo $dates ?>],
+          datasets: [{
+            label: '%',
+            data: [<?php echo $co2s ?>],
+            backgroundColor: [
+              'rgba(30, 170, 132, 0.2)',
+            ],
+            borderColor: [
+              'rgba(30, 170, 132, 1)',
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
           }
-        }]
-      }
-    }
-  });
-*/
-
+        }
+      });
+    */
 </script>

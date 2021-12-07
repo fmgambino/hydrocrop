@@ -93,10 +93,16 @@ main {
     
 }
 
+.hc-color-azul-2 {
+    background: linear-gradient(to top right, #49f2ec , #03eda4 ) !important;
+    border-radius: 5%;    
+    margin-top: 20px;
+    
+}
+
 .hc-color-rojo{
     background: linear-gradient(to top right, #c07674 , #ca3c37 ) !important;
-    border-radius: 5%;
-    
+    border-radius: 5%;    
     height: 100%;    
 }
 .hc-box-a{

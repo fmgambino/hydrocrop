@@ -46,8 +46,8 @@
   <div class="mdl-layout mdl-js-layout color--gray is-small-screen login">
     <center><span class="mdl-card__title-text text-color--smooth-gray">Autores: Zenteno - Gambino </span></center>
 
-    <main class="mdl-layout__content d-flex justify-content-center  ">
-
+    <main class="mdl-layout__content d-flex justify-content-center img-fluid">
+    
       <div class="mdl-card__login ">
         <div class=" hc-box-login border p-4">
           <center><a href="https://hydrocrop.net">
@@ -98,8 +98,7 @@
           <?php echo $msg ?>
         </div>
       </div>
-  </div>
-  </main>
+    </main>
   </div>
 
   <!-- inject:js -->
