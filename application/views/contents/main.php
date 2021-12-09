@@ -259,7 +259,8 @@
                 <div class="mdl-card__title ">
                   <h2 class="mdl-card__title-text">Parametros </h2>
                 </div>
-                <form action="scripts.php" method="POST">
+
+                <form id="formulario">
                   <li class="mdl-list__item list__item--border-top">
                     <div style="width: 50%; ">
                       <span class="mdl-list__item-primary-content list__item-text hc-ancho">TEMPERATURA</span>
@@ -468,4 +469,26 @@
         }
       });
     */
+
+  var formulario =  document.getElementById('formulario');
+  formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    console.log('capture el click');
+    var datos = new FormData(formulario);
+    
+    console.log(datos.get('fortemp'))
+    console.log(datos.get('formhum'))
+    console.log(datos.get('formco2'))
+    console.log(datos.get('formtime'))
+
+    fetch('scripts.php',{
+      method: 'POST',
+      body: datos
+    })
+
+    .then(respuesta => res.json())
+    .then(data => {
+      console.log(data)
+    })
+  })
 </script>
