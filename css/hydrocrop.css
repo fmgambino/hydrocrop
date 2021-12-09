@@ -284,3 +284,7 @@ canvas{
     border-radius: 10px;
 
 }
+
+.hc-radio{
+    border-radius: 100%;
+}
