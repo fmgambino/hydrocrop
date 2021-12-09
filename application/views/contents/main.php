@@ -495,4 +495,37 @@
     })
     */
   })
+
+
+  function sw1_change() {
+    if ($('#display_sw1').is(":checked")) {
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker
+    } else {
+      client.publish(device_topic + 'actions/sw1', "0");
+    }
+  }
+
+  function sw2_change() {
+    if ($('#display_sw2').is(":checked")) {
+      client.publish(device_topic + 'actions/sw2', "1");
+    } else {
+      client.publish(device_topic + 'actions/sw2', "0");
+    }
+  }
+
+  function sw3_change() {
+    if ($('#display_sw3').is(":checked")) {
+      //client.publish(device_topic + 'actions/sw3',"1");
+      client.publish(device_topic + 'actions/ptemp', "20");
+    } else {
+      client.publish(device_topic + 'actions/sw3', "0");
+    }
+  }
+
+  function slider_change() {
+    value = $('#display_slider').val();
+    client.publish(device_topic + 'actions/slider', value);
+  }
+
+
 </script>
