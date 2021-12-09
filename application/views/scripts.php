@@ -107,6 +107,8 @@
       var switch2 = splitted[6];
       var switch3 = splitted[7];
 
+      console.log(splitted);
+
 
 
 
@@ -183,31 +185,7 @@
     value = $('#display_slider').val();
     client.publish(device_topic + 'actions/slider', value);
   }
-
-  //SE CREA FUNCION PARA ENVIO DE DATOS DEL FORMULARIO PARAMETROS
-<?php 
-  $ptemp = $_POST['formtemp'];
-  $phum =  $_POST['formhum'];
-  $pco2 =  $_POST['formco2'];
-  $ptime = $_POST['formtime'];
-
-  echo json_encode('datos recibidos en php ptemp:'.$ptemp);
-?> 
-
-  pvalue = $('ptemp', 'phum', 'pco2', 'ptime').val();
-  client.publish(device_topic + 'actions/pdatos', pvalue);
-
-  /*
-  function parametros(){
-    if ($('#boton').is(":oneclick"))
-    {
-      pvalue = $('ptemp','phum','pco2', 'ptime').val();
-      client.publish(device_topic + 'actions/pdatos',pvalue);
-    }else{
-      client.publish(device_topic + 'actions/pdatos',"0");
-    }
-  }
-  */
+  
 </script>
 <!-- endinject -->
 
