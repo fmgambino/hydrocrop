@@ -87,11 +87,18 @@ class Devices extends CI_Controller {
 
 	public function parametros() 
 	{
-		$this->input->post('ptemp');
-		$this->input->post('phum');
-		$this->input->post('pco2');
-		$this->input->post('ptime');
+		//$this->input->post('ptemp');
+		//$this->input->post('phum');
+		//$this->input->post('pco2');
+		//$this->input->post('ptime');
+
+		var_dump ($this->input->post('ptemp'));
+		var_dump ($this->input->post('phum'));
+		var_dump ($this->input->post('pco2'));
+		var_dump ($this->input->post('ptime'));
 		
 	}
+   
+
 
 }
