@@ -247,6 +247,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
+                  <h1><span class="red">2</span>Un circulo rojo con un número interior</h1>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -254,6 +255,7 @@
                   <span class="mdl-list__item-secondary-content">
                     <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="12" tabindex="0">
                   </span>
+                  
                 </li>
 
                 <div class="mdl-card__title ">
