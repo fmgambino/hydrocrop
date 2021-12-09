@@ -247,7 +247,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <span class="material-icons-outlined">check_circle</span>
+                  <span class="material-icons">check_circle</span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
