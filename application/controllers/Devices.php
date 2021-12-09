@@ -96,6 +96,7 @@ class Devices extends CI_Controller {
 		var_dump ($this->input->post('phum'));
 		var_dump ($this->input->post('pco2'));
 		var_dump ($this->input->post('ptime'));
+		die('ok');
 		
 	}
    
