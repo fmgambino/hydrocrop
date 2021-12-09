@@ -191,7 +191,7 @@
   $pco2 =  $_POST['formco2'];
   $ptime = $_POST['formtime'];
 
-  echo json_encode('datos recividos en php ptemp:'.$ptemp);
+  echo json_encode('datos recibidos en php ptemp:'.$ptemp);
 ?> 
 
   pvalue = $('ptemp', 'phum', 'pco2', 'ptime').val();
