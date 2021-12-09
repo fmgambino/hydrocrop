@@ -288,7 +288,7 @@ canvas{
 .red {
     background: greenyellow;
      border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
+    -moz-border-radius: 3.8em;
     -webkit-border-radius: 0.8em;
     color: #ffffff;
     display: inline-block;
