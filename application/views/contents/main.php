@@ -267,7 +267,7 @@
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="fortemp" class="form-control" placeholder="Temp. Max en °C" type="text">
+                        <input name="formtemp" class="form-control" placeholder="Temp. Max en °C" type="text">
                       </span>
                     </div>
                   </li>
