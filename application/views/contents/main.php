@@ -481,7 +481,10 @@
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
 
-    fetch('Devices/parametros',{
+    $.post("<?php echo base_url('devices/parametros'); ?>", datos, function(result){
+    });
+
+   /* fetch('Devices/parametros',{
       method: 'POST',
       body: datos
     })
@@ -490,5 +493,6 @@
     .then(data => {
       console.log(data)
     })
+    */
   })
 </script>
