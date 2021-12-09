@@ -476,12 +476,12 @@
     console.log('capture el click');
     var datos = new FormData(formulario);
     
-    console.log(datos.get('fortemp'))
+    console.log(datos.get('formtemp'))
     console.log(datos.get('formhum'))
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
 
-    $.post("<?php echo base_url('devices/parametros'); ?>", {fortemp:datos.get('fortemp')}, function(result){
+    $.post("<?php echo base_url('devices/parametros'); ?>", {fortemp:datos.get('formtemp')}, function(result){
     });
 
    /* fetch('Devices/parametros',{
