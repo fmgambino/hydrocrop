@@ -481,7 +481,7 @@
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
 
-    $.post("<?php echo base_url('devices/parametros'); ?>", {fortemp:datos.get('formtemp')}, function(result){
+    $.post("<?php echo base_url('devices/parametros'); ?>", {formtemp:datos.get('formtemp')}, function(result){
     });
 
    /* fetch('Devices/parametros',{
