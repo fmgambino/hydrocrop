@@ -481,7 +481,7 @@
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
 
-    fetch('scripts/devices',{
+    fetch('devices.php',{
       method: 'POST',
       body: datos
     })
