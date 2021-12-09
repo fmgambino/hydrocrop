@@ -186,6 +186,15 @@ function slider_change(){
 }
 
 //SE CREA FUNCION PARA ENVIO DE DATOS DEL FORMULARIO PARAMETROS
+
+$ptemp = $_POST['formtemp'];
+$phum = $_POST['formhum'];
+$pco2 = $_POST['formco2'];
+$ptime = $_POST['formtime']; 
+
+pvalue = $('ptemp','phum','pco2', 'ptime').val();
+client.publish(device_topic + 'actions/pdatos',pvalue);
+
 /*
 function parametros(){
   if ($('#boton').is(":oneclick"))

@@ -259,14 +259,14 @@
                 <div class="mdl-card__title ">
                   <h2 class="mdl-card__title-text">Parametros </h2>
                 </div>
-                <form>
+                <form action="scripts.php" method="POST">
                   <li class="mdl-list__item list__item--border-top">
                     <div style="width: 50%; ">
                       <span class="mdl-list__item-primary-content list__item-text hc-ancho">TEMPERATURA</span>
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input onchange="" id="" class="form-control" placeholder="Temp. Max en °C" type="text">
+                        <input name="fortemp" class="form-control" placeholder="Temp. Max en °C" type="text">
                       </span>
                     </div>
                   </li>
@@ -277,7 +277,7 @@
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input onchange="" id="" class="form-control" placeholder="Hum. Max en %" type="text">
+                        <input name="formhum" class="form-control" placeholder="Hum. Max en %" type="text">
                       </span>
                     </div>
                   </li>
@@ -288,7 +288,7 @@
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input onchange="" id="" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                        <input name="formco2" class="form-control" placeholder="CO2 Max en PPM" type="text">
                       </span>
                     </div>
                   </li>
@@ -299,7 +299,7 @@
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content ">
-                        <input onchange="" id="" class="form-control " placeholder="Tiempo en min." type="text">
+                        <input name="formtime" id="" class="form-control " placeholder="Tiempo en min." type="text">
                       </span>
                     </div>
                   </li>
