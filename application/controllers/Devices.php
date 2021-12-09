@@ -34,6 +34,7 @@ class Devices extends CI_Controller {
   }
 
 
+
 	//llamamos esta función cuando se cambia el selector del dispositivo
 	public function change_device(){
 		$user_id = $this->session->userdata('user_id');
@@ -82,6 +83,15 @@ class Devices extends CI_Controller {
 		}
 	}
 
+	//ENVIO DATOS MQTT
 
+	public function parametros() 
+	{
+		$this->input->post('ptemp');
+		$this->input->post('phum');
+		$this->input->post('pco2');
+		$this->input->post('ptime');
+		
+	}
 
 }
