@@ -247,7 +247,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <h1><span class="red">2</span></h1>
+                  <h1><span class="red"></span></h1>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
