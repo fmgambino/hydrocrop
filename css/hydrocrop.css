@@ -285,16 +285,7 @@ canvas{
 
 }
 
-.red {
-    background: greenyellow;
-     border-radius: 0.8em;
-    -moz-border-radius: 3.8em;
-    -webkit-border-radius: 0.8em;
-    color: #ffffff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 1.6em;
-    margin-right: 5px;
-    text-align: center;
-    width: 1.6em; 
-  }
+.hc-iconoñ{
+    color: #2DE14F;
+    font-size: 35px;
+}

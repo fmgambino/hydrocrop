@@ -226,6 +226,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
+                  <span class="material-icons hc-icono">check_circle</span>
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -234,8 +235,9 @@
                     <label class="switch">
                       <input onchange="sw2_change()" type="checkbox" id="display_sw2">
                       <span class="slider round"></span>
-                    </label>
+                    </label>                    
                   </span>
+                  <span class="material-icons hc-icono">check_circle</span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -247,7 +249,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <span class="material-icons">check_circle</span>
+                  <span class="material-icons hc-icono">check_circle</span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
