@@ -496,6 +496,103 @@
     */
   })
 
+  const options = {
+    connectTimeout: 1000,
+    // Authentication
+    clientId: 'client_id_' + Math.floor((Math.random() * 1000000) + 1),
+    username: '<?php echo MQTT_USER; ?>',
+    password: '<?php echo MQTT_PASSWORD; ?>',
+    keepalive: 60,
+    clean: true,
+  }
+
+  // WebSocket connect url
+  const WebSocket_URL = 'wss://ioticos.org:8094/mqtt';
+  const client = mqtt.connect(WebSocket_URL, options)
+
+  var device_topic = '<?php echo ROOT_TOPIC . "/" . $_SESSION['selected_topic'] . "/" ?>';
+  client.on('connect', () => {
+    console.log('Conexión Exitosa ^_^');
+
+    client.subscribe(device_topic + "data", {
+      qos: 0
+    }, (error) => {
+      if (error) {
+        console.log("Error al Suscribir");
+      } else {
+        console.log("Suscrito al Broker con Exito!");
+        console.log("Proyecto Final de Carrera");
+        console.log("San Miguel de Tucumán - Tucumán - Argentina");
+        console.log("UTN - FRT");
+        console.log("2021");
+      }
+
+    })
+  })
+
+  client.on('message', (topic, message) => {
+    console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
+
+    if (topic == device_topic + "data") {
+      var splitted = message.toString().split(",");
+
+      var co2 = splitted[0];
+      var tempamb = splitted[1];
+      var hum = splitted[2];
+      var ph = splitted[3];
+      var niv = splitted[4];
+
+
+      var switch1 = splitted[5];
+      var switch2 = splitted[6];
+      var switch3 = splitted[7];
+
+
+
+
+      $("#display_co2").html(co2);
+      $("#display_tempamb").html(tempamb);
+      $("#display_hum").html(hum);
+      $("#display_ph").html(ph);
+
+
+      if (niv == 1) {
+        $("#display_niv").html("ALTO");
+      } else {
+        $("#display_niv").html("OPTIMO");
+      }
+
+      if (switch1 == "1") {
+        $("#display_sw1").prop('checked', true);
+      } else {
+        $("#display_sw1").prop('checked', "");
+      }
+
+      if (switch2 == "1") {
+        $("#display_sw2").prop('checked', true);
+      } else {
+        $("#display_sw2").prop('checked', "");
+      }
+
+      if (switch3 == "1") {
+        $("#display_sw3").prop('checked', true);
+      } else {
+        $("#display_sw3").prop('checked', "");
+      }
+
+
+    }
+
+
+  })
+
+  client.on('reconnect', (error) => {
+    console.log('reconnecting:', error);
+  })
+
+  client.on('error', (error) => {
+    console.log('Connect Error:', error);
+  })
 
   function sw1_change() {
     if ($('#display_sw1').is(":checked")) {
