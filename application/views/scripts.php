@@ -115,9 +115,9 @@ client.on('message', (topic, message) => {
     
     
     if(niv==1){
-      $("#display_niv").html("OPTIMO");
+      $("#display_niv").html("ALTO");
     } else{
-      $("#display_niv").html("BAJO");
+      $("#display_niv").html("OPTIMO");
     }
 
     if(switch1 == "1"){
@@ -174,6 +174,7 @@ function sw3_change(){
   if ($('#display_sw3').is(":checked"))
   {
     client.publish(device_topic + 'actions/sw3',"1");
+    client.publish(device_topic + 'actions/ptemp',"20");
   }else{
     client.publish(device_topic + 'actions/sw3',"0");
   }
@@ -187,9 +188,9 @@ function slider_change(){
 //SE CREA FUNCION PARA ENVIO DE DATOS DEL FORMULARIO PARAMETROS
 /*
 function parametros(){
-  if ($('#boton').is(":checked"))
+  if ($('#boton').is(":oneclick"))
   {
-    pvalue = $('ptemp','phum','pco', 'ptime').val();
+    pvalue = $('ptemp','phum','pco2', 'ptime').val();
     client.publish(device_topic + 'actions/pdatos',pvalue);
   }else{
     client.publish(device_topic + 'actions/pdatos',"0");
