@@ -480,23 +480,12 @@
     console.log(datos.get('formhum'))
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
+
     client.publish(device_topic + 'actions/ftemp', datos.get('formtemp'));
     client.publish(device_topic + 'actions/fhum', datos.get('formhum'));
     client.publish(device_topic + 'actions/fco2', datos.get('formco2'));
     client.publish(device_topic + 'actions/ftime', datos.get('formtime'));
     
-    //$.post("<?php echo base_url('devices/parametros'); ?>", {formtemp:datos.get('formtemp')}, function(result){});
-
-   /* fetch('Devices/parametros',{
-      method: 'POST',
-      body: datos
-    })
-
-    .then(respuesta => res.json())
-    .then(data => {
-      console.log(data)
-    })
-    */
   })
 
   const options = {
@@ -549,6 +538,8 @@
       var switch1 = splitted[5];
       var switch2 = splitted[6];
       var switch3 = splitted[7];
+
+      console.log(splitted);
 
 
 
