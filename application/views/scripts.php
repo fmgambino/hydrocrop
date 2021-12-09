@@ -174,7 +174,7 @@ function sw3_change(){
   if ($('#display_sw3').is(":checked"))
   {
     client.publish(device_topic + 'actions/sw3',"1");
-    client.publish(device_topic + 'actions/ptemp',"20");
+    //client.publish(device_topic + 'actions/ptemp',"20");
   }else{
     client.publish(device_topic + 'actions/sw3',"0");
   }
