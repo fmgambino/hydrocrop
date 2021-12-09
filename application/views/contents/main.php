@@ -481,7 +481,7 @@
     console.log(datos.get('formco2'))
     console.log(datos.get('formtime'))
 
-    fetch('/Devices/parametros',{
+    fetch('app/Devices/parametros',{
       method: 'POST',
       body: datos
     })
