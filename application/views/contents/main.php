@@ -198,7 +198,7 @@
                 <i class="material-icons">water</i>
               </div>
               <div>
-                <p id="display_niv" class="weather-temperature hc-textresposive p-1">OPTIMO</p>
+                <p id="display_niv" class="weather-temperature hc-textresposive p-1">--</p>
               </div>
             </div>
           </div>
