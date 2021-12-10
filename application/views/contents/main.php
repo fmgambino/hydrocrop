@@ -271,12 +271,12 @@
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formtempmin" class="form-control" placeholder="Temp. Min en °C" type="text">
+                        <input name="formtempmin" class="form-control" placeholder="Min en °C" type="text">
                       </span>
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formtempmax" class="form-control" placeholder="Temp. Max en °C" type="text">
+                        <input name="formtempmax" class="form-control" placeholder="Max en °C" type="text">
                       </span>
                     </div>
                   </li>
@@ -287,12 +287,12 @@
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formhummin" class="form-control" placeholder="Hum. Min en %" type="text">
+                        <input name="formhummin" class="form-control" placeholder="Min en %" type="text">
                       </span>
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formhummax" class="form-control" placeholder="Hum. Max en %" type="text">
+                        <input name="formhummax" class="form-control" placeholder="Max en %" type="text">
                       </span>
                     </div>
                   </li>
@@ -303,12 +303,12 @@
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formco2min" class="form-control" placeholder="CO2 Min en PPM" type="text">
+                        <input name="formco2min" class="form-control" placeholder="Min en PPM" type="text">
                       </span>
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formco2max" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                        <input name="formco2max" class="form-control" placeholder="Max en PPM" type="text">
                       </span>
                     </div>
                   </li>
