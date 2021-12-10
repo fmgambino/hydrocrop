@@ -172,7 +172,21 @@ main {
     margin-left: 0px !important; 
 }
 
+.hc-textresposive{
+    font-size: calc(4em + 1vw) !important;     
+}
+.mdl-layout__header-row{
+    padding: 0 8px 0 10px !important;
+}
 
+.hc-selectdevice{
+    margin-left: 42px;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 60%;
+    width: 30%;
+    max-width: 200px;
+}
 
 /*----------------------------------*/
 canvas{

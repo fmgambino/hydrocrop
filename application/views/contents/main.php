@@ -196,10 +196,10 @@
               <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text ">Nivel H2O</h2>
                 <i class="material-icons">water</i>
-
               </div>
-              <p id="display_niv" class="weather-temperature">--</p>
-
+              <div>
+                <p id="display_niv" class="weather-temperature hc-textresposive p-1">OPTIMO</p>
+              </div>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@
                       <input onchange="sw1_change()" type="checkbox" id="display_sw1">
                       <span class="slider round"></span>
                     </label>
-                  </span>              
+                  </span>
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -234,8 +234,8 @@
                     <label class="switch">
                       <input onchange="sw2_change()" type="checkbox" id="display_sw2">
                       <span class="slider round"></span>
-                    </label>                    
-                  </span>                
+                    </label>
+                  </span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -246,7 +246,7 @@
                       <input onchange="sw3_change()" type="checkbox" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
-                  </span>                  
+                  </span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -254,7 +254,7 @@
                   <span class="mdl-list__item-secondary-content">
                     <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="12" tabindex="0">
                   </span>
-                  
+
                 </li>
 
                 <div class="mdl-card__title ">
@@ -263,7 +263,7 @@
 
                 <form id="formulario">
                   <li class="mdl-list__item list__item--border-top row hc-hover">
-                    <div class="col-12 text-center mb-3" >
+                    <div class="col-12 text-center mb-3">
                       <span class="">TEMPERATURA</span>
                     </div>
                     <div class="col-6">
@@ -279,15 +279,15 @@
                   </li>
 
                   <li class="mdl-list__item list__item--border-top row hc-hover">
-                    <div class="col-12 text-center mb-3" >
+                    <div class="col-12 text-center mb-3">
                       <span class="">HUMEDAD</span>
                     </div>
-                    <div class="col-6" >
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formhummin" class="form-control" placeholder="Min en %" type="text">
                       </span>
                     </div>
-                    <div class="col-6" >
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formhummax" class="form-control" placeholder="Max en %" type="text">
                       </span>
@@ -298,12 +298,12 @@
                     <div class="col-12 text-center mb-3">
                       <span class="">CO2</span>
                     </div>
-                    <div class="col-6" >
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formco2min" class="form-control" placeholder="Min en PPM" type="text">
                       </span>
                     </div>
-                    <div class="col-6" >
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formco2max" class="form-control" placeholder="Max en PPM" type="text">
                       </span>
@@ -356,7 +356,7 @@
               </div>
             </div>
           </div>
-          <!-- Table--> 
+          <!-- Table-->
 
 
         </div>
@@ -427,71 +427,71 @@
       }
     }
   });
- /*
-  var myChart3 = new Chart(ctx3, {
-    type: 'line',
-    data: {
-      labels: [<?php echo $dates ?>],
-      datasets: [{
-        label: 'pH',
-        data: [<?php echo $phs ?>],
-        backgroundColor: [
-          'rgba(30, 170, 132, 0.2)',
-        ],
-        borderColor: [
-          'rgba(30, 170, 132, 1)',
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      maintainAspectRatio: false,
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      }
-    }
-  });
- */
- /*
-      var myChart4 = new Chart(ctx4, {
-        type: 'line',
-        data: {
-          labels: [<?php echo $dates ?>],
-          datasets: [{
-            label: '%',
-            data: [<?php echo $co2s ?>],
-            backgroundColor: [
-              'rgba(30, 170, 132, 0.2)',
-            ],
-            borderColor: [
-              'rgba(30, 170, 132, 1)',
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          maintainAspectRatio: false,
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-      });
-    */
+  /*
+   var myChart3 = new Chart(ctx3, {
+     type: 'line',
+     data: {
+       labels: [<?php echo $dates ?>],
+       datasets: [{
+         label: 'pH',
+         data: [<?php echo $phs ?>],
+         backgroundColor: [
+           'rgba(30, 170, 132, 0.2)',
+         ],
+         borderColor: [
+           'rgba(30, 170, 132, 1)',
+         ],
+         borderWidth: 1
+       }]
+     },
+     options: {
+       maintainAspectRatio: false,
+       scales: {
+         yAxes: [{
+           ticks: {
+             beginAtZero: true
+           }
+         }]
+       }
+     }
+   });
+  */
+  /*
+       var myChart4 = new Chart(ctx4, {
+         type: 'line',
+         data: {
+           labels: [<?php echo $dates ?>],
+           datasets: [{
+             label: '%',
+             data: [<?php echo $co2s ?>],
+             backgroundColor: [
+               'rgba(30, 170, 132, 0.2)',
+             ],
+             borderColor: [
+               'rgba(30, 170, 132, 1)',
+             ],
+             borderWidth: 1
+           }]
+         },
+         options: {
+           maintainAspectRatio: false,
+           scales: {
+             yAxes: [{
+               ticks: {
+                 beginAtZero: true
+               }
+             }]
+           }
+         }
+       });
+     */
 
-  var formulario =  document.getElementById('formulario');
-  formulario.addEventListener('submit', function(e){
+  var formulario = document.getElementById('formulario');
+  formulario.addEventListener('submit', function(e) {
     e.preventDefault();
     console.log('capture el click');
     var datos = new FormData(formulario);
-   
+
     client.publish(device_topic + 'actions/ftempmin', datos.get('formtempmin'));
     client.publish(device_topic + 'actions/ftempmax', datos.get('formtempmax'));
     client.publish(device_topic + 'actions/fhummin', datos.get('formhummin'));
@@ -499,8 +499,8 @@
     client.publish(device_topic + 'actions/fco2min', datos.get('formco2min'));
     client.publish(device_topic + 'actions/fco2max', datos.get('formco2max'));
     client.publish(device_topic + 'actions/ftime', datos.get('formtime'));
-    
-    
+
+
   })
 
   const options = {
@@ -619,7 +619,7 @@
 
   function sw3_change() {
     if ($('#display_sw3').is(":checked")) {
-      client.publish(device_topic + 'actions/sw3',"1");
+      client.publish(device_topic + 'actions/sw3', "1");
     } else {
       client.publish(device_topic + 'actions/sw3', "0");
     }
@@ -656,5 +656,4 @@
       client.publish(device_topic + 'actions/sw1', "0");
     }
   }
-
 </script>
