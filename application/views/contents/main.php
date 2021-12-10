@@ -266,39 +266,49 @@
 
                 <form id="formulario">
                   <li class="mdl-list__item list__item--border-top row">
-                    <div class="col-12 text-center" style="">
+                    <div class="col-12 text-center mb-3" style="">
                       <span class="">TEMPERATURA</span>
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formtemp" class="form-control" placeholder="Temp. Min en °C" type="text">
+                        <input name="formtempmin" class="form-control" placeholder="Temp. Min en °C" type="text">
                       </span>
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formtemp" class="form-control" placeholder="Temp. Max en °C" type="text">
+                        <input name="formtempmax" class="form-control" placeholder="Temp. Max en °C" type="text">
                       </span>
                     </div>
                   </li>
 
-                  <li class="mdl-list__item list__item--border-top">
-                    <div style="width: 50%; ">
-                      <span class="mdl-list__item-primary-content list__item-text">HUMEDAD</span>
+                  <li class="mdl-list__item list__item--border-top row">
+                    <div class="col-12 text-center mb-3" >
+                      <span class="">HUMEDAD</span>
                     </div>
-                    <div style="width: 50%; padding-left: 10px;">
+                    <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formhum" class="form-control" placeholder="Hum. Max en %" type="text">
+                        <input name="formhummin" class="form-control" placeholder="Hum. Max en %" type="text">
+                      </span>
+                    </div>
+                    <div class="col-6" style=" padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input name="formhummax" class="form-control" placeholder="Hum. Max en %" type="text">
                       </span>
                     </div>
                   </li>
 
-                  <li class="mdl-list__item list__item--border-top">
-                    <div style="width: 50%; ">
-                      <span class="mdl-list__item-primary-content list__item-text">CO2</span>
+                  <li class="mdl-list__item list__item--border-top row">
+                    <div class="col-12 text-center mb-3" style=" ">
+                      <span class="">CO2</span>
                     </div>
-                    <div style="width: 50%; padding-left: 10px;">
+                    <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formco2" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                        <input name="formco2min" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                      </span>
+                    </div>
+                    <div class="col-6" style=" padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input name="formco2max" class="form-control" placeholder="CO2 Max en PPM" type="text">
                       </span>
                     </div>
                   </li>
