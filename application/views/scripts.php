@@ -16,8 +16,9 @@
 <script src="<?php echo base_url('js/widgets/pie-chart/pie-charts-nvd3.min.js') ?>"></script>
 <script src="<?php echo base_url('js/widgets/table/table.min.js') ?>"></script>
 <script src="<?php echo base_url('js/widgets/todo/todo.min.js') ?>"></script>
-
+<script src="<?php echo base_url('js/sweetalert2.all.min.js') ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
