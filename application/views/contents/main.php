@@ -496,10 +496,11 @@
       console.log('completar todos los campos');
       Swal.fire({
         icon: 'error',
-        title: 'Debes completa todos los campos!'                   
+        title: 'completar todos los campos',
+        text: '',
+        footer: ''
       })
-    } 
-    else {
+    } else {
       client.publish(device_topic + 'actions/ftempmin', datos.get('formtempmin'));
       client.publish(device_topic + 'actions/ftempmax', datos.get('formtempmax'));
       client.publish(device_topic + 'actions/fhummin', datos.get('formhummin'));
