@@ -497,8 +497,7 @@
       Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'completa todos los campos!',
-          footer: '<a href="">Why do I have this issue?</a>'
+          text: 'completa todos los campos!'          
       })
     } 
     else {
