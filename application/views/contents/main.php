@@ -185,7 +185,7 @@
                 <h2 class="mdl-card__title-text">Conductividad</h2>
                 <i class="material-icons">bolt</i>
               </div>
-              <p id="display_conduc" class="weather-temperature">--</p>
+              <p id="display_cdtv" class="weather-temperature">--</p>
             </div>
           </div>
         </div>
@@ -556,16 +556,14 @@
       var switch1 = splitted[5];
       var switch2 = splitted[6];
       var switch3 = splitted[7];
-
-      console.log(splitted);
-
-
+      var cdtv = splitted[8];
 
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
       $("#display_hum").html(hum);
       $("#display_ph").html(ph);
+      $("#display_cdtv").html(cdtv);
 
 
       if (niv == 1) {

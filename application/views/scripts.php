@@ -106,7 +106,7 @@
       var switch1 = splitted[5];
       var switch2 = splitted[6];
       var switch3 = splitted[7];
-
+      var cdtv = splitted[8];
 
 
 
@@ -114,6 +114,7 @@
       $("#display_tempamb").html(tempamb);
       $("#display_hum").html(hum);
       $("#display_ph").html(ph);
+      $("#display_cdtv").html(cdtv);
 
 
       if (niv == 1) {
