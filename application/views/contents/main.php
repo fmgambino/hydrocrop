@@ -226,7 +226,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <span class="material-icons hc-icono">check_circle</span>
+                  <span class="material-icons hc-icono" id = "estado_bomba">check_circle</span>
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -237,7 +237,7 @@
                       <span class="slider round"></span>
                     </label>                    
                   </span>
-                  <span class="material-icons hc-icono">check_circle</span>
+                  <span class="material-icons hc-icono" id = "estado_cooler">check_circle</span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -249,7 +249,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <span class="material-icons hc-icono">check_circle</span>
+                  <span class="material-icons hc-icono" id = "estado_difusor">check_circle</span>
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -265,11 +265,16 @@
                 </div>
 
                 <form id="formulario">
-                  <li class="mdl-list__item list__item--border-top">
-                    <div style="width: 50%; ">
+                  <li class="mdl-list__item list__item--border-top row">
+                    <div class="col-12" style="">
                       <span class="mdl-list__item-primary-content list__item-text hc-ancho">TEMPERATURA</span>
                     </div>
-                    <div style="width: 50%; padding-left: 10px;">
+                    <div class="col-6" style="padding-left: 10px;">
+                      <span class="mdl-list__item-secondary-content">
+                        <input name="formtemp" class="form-control" placeholder="Temp. Max en °C" type="text">
+                      </span>
+                    </div>
+                    <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formtemp" class="form-control" placeholder="Temp. Max en °C" type="text">
                       </span>
@@ -622,5 +627,31 @@
     client.publish(device_topic + 'actions/slider', value);
   }
 
+
+  // FUNCIONES CIRCULOS DE ESTADOS
+
+  function ce1_change() {
+    if ($('#display_sw1').is(":checked")) {
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker
+    } else {
+      client.publish(device_topic + 'actions/sw1', "0");
+    }
+  }
+
+  function ce2_change() {
+    if ($('#display_sw1').is(":checked")) {
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker
+    } else {
+      client.publish(device_topic + 'actions/sw1', "0");
+    }
+  }
+
+  function ce3_change() {
+    if ($('#display_sw1').is(":checked")) {
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker
+    } else {
+      client.publish(device_topic + 'actions/sw1', "0");
+    }
+  }
 
 </script>
