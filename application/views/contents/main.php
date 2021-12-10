@@ -266,12 +266,12 @@
 
                 <form id="formulario">
                   <li class="mdl-list__item list__item--border-top row">
-                    <div class="col-12" style="">
+                    <div class="col-12 text-center" style="">
                       <span class="mdl-list__item-primary-content list__item-text hc-ancho">TEMPERATURA</span>
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formtemp" class="form-control" placeholder="Temp. Max en °C" type="text">
+                        <input name="formtemp" class="form-control" placeholder="Temp. Min en °C" type="text">
                       </span>
                     </div>
                     <div class="col-6" style="padding-left: 10px;">
