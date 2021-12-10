@@ -494,6 +494,7 @@
     var datos = new FormData(formulario);
     if(datos.get('formtempmin') === "" || datos.get('formtempmax') === "" || datos.get('formhummin') === "" || datos.get('formhummax') === "" || datos.get('formco2min') === "" || datos.get('formco2max') === "" || datos.get('formtime') === ""){
       console.log('completar todos los campos');
+      alert('completar todos los campos');
     }
     client.publish(device_topic + 'actions/ftempmin', datos.get('formtempmin'));
     client.publish(device_topic + 'actions/ftempmax', datos.get('formtempmax'));
