@@ -494,16 +494,15 @@
     e.preventDefault();
     console.log('capture el click');
     var datos = new FormData(formulario);
-    
-    console.log(datos.get('formtemp'))
-    console.log(datos.get('formhum'))
-    console.log(datos.get('formco2'))
-    console.log(datos.get('formtime'))
-
-    client.publish(device_topic + 'actions/ftemp', datos.get('formtemp'));
-    client.publish(device_topic + 'actions/fhum', datos.get('formhum'));
-    client.publish(device_topic + 'actions/fco2', datos.get('formco2'));
+   
+    client.publish(device_topic + 'actions/ftempmin', datos.get('formtempmin'));
+    client.publish(device_topic + 'actions/ftempmax', datos.get('formtempmax'));
+    client.publish(device_topic + 'actions/fhummin', datos.get('formhummin'));
+    client.publish(device_topic + 'actions/fhummax', datos.get('formhummax'));
+    client.publish(device_topic + 'actions/fco2min', datos.get('formco2min'));
+    client.publish(device_topic + 'actions/fco2max', datos.get('formco2max'));
     client.publish(device_topic + 'actions/ftime', datos.get('formtime'));
+    
     
   })
 
