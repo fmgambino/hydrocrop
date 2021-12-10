@@ -287,7 +287,7 @@
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formhummin" class="form-control" placeholder="Hum. Max en %" type="text">
+                        <input name="formhummin" class="form-control" placeholder="Hum. Min en %" type="text">
                       </span>
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
@@ -303,7 +303,7 @@
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content">
-                        <input name="formco2min" class="form-control" placeholder="CO2 Max en PPM" type="text">
+                        <input name="formco2min" class="form-control" placeholder="CO2 Min en PPM" type="text">
                       </span>
                     </div>
                     <div class="col-6" style=" padding-left: 10px;">
