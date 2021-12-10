@@ -508,6 +508,12 @@
       client.publish(device_topic + 'actions/fco2min', datos.get('formco2min'));
       client.publish(device_topic + 'actions/fco2max', datos.get('formco2max'));
       client.publish(device_topic + 'actions/ftime', datos.get('formtime'));
+
+      Swal.fire(
+        'perfecto!',
+        'Datos enviados con exito!',
+        'success'
+      )
     }
   })
 
