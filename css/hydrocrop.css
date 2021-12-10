@@ -166,6 +166,14 @@ main {
 .booked-prime-days-data .booked-pd-nidw{
     color: rgb(0, 0, 0) !important;
 }
+
+.hc-hover {    
+    margin-right: 0px !important;
+    margin-left: 0px !important; 
+}
+
+
+
 /*----------------------------------*/
 canvas{
     padding-right: 20px;

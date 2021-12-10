@@ -225,8 +225,7 @@
                       <input onchange="sw1_change()" type="checkbox" id="display_sw1">
                       <span class="slider round"></span>
                     </label>
-                  </span>
-                  <span class="material-icons hc-icono" id = "estado_bomba">check_circle</span>
+                  </span>              
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -236,8 +235,7 @@
                       <input onchange="sw2_change()" type="checkbox" id="display_sw2">
                       <span class="slider round"></span>
                     </label>                    
-                  </span>
-                  <span class="material-icons hc-icono" id = "estado_cooler">check_circle</span>
+                  </span>                
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -248,8 +246,7 @@
                       <input onchange="sw3_change()" type="checkbox" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
-                  </span>
-                  <span class="material-icons hc-icono" id = "estado_difusor">check_circle</span>
+                  </span>                  
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -265,48 +262,48 @@
                 </div>
 
                 <form id="formulario">
-                  <li class="mdl-list__item list__item--border-top row">
-                    <div class="col-12 text-center mb-3" style="">
+                  <li class="mdl-list__item list__item--border-top row hc-hover">
+                    <div class="col-12 text-center mb-3" >
                       <span class="">TEMPERATURA</span>
                     </div>
-                    <div class="col-6" style="padding-left: 10px;">
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formtempmin" class="form-control" placeholder="Min en °C" type="text">
                       </span>
                     </div>
-                    <div class="col-6" style="padding-left: 10px;">
+                    <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
                         <input name="formtempmax" class="form-control" placeholder="Max en °C" type="text">
                       </span>
                     </div>
                   </li>
 
-                  <li class="mdl-list__item list__item--border-top row">
+                  <li class="mdl-list__item list__item--border-top row hc-hover">
                     <div class="col-12 text-center mb-3" >
                       <span class="">HUMEDAD</span>
                     </div>
-                    <div class="col-6" style=" padding-left: 10px;">
+                    <div class="col-6" >
                       <span class="mdl-list__item-secondary-content">
                         <input name="formhummin" class="form-control" placeholder="Min en %" type="text">
                       </span>
                     </div>
-                    <div class="col-6" style=" padding-left: 10px;">
+                    <div class="col-6" >
                       <span class="mdl-list__item-secondary-content">
                         <input name="formhummax" class="form-control" placeholder="Max en %" type="text">
                       </span>
                     </div>
                   </li>
 
-                  <li class="mdl-list__item list__item--border-top row">
-                    <div class="col-12 text-center mb-3" style=" ">
+                  <li class="mdl-list__item list__item--border-top row hc-hover">
+                    <div class="col-12 text-center mb-3">
                       <span class="">CO2</span>
                     </div>
-                    <div class="col-6" style=" padding-left: 10px;">
+                    <div class="col-6" >
                       <span class="mdl-list__item-secondary-content">
                         <input name="formco2min" class="form-control" placeholder="Min en PPM" type="text">
                       </span>
                     </div>
-                    <div class="col-6" style=" padding-left: 10px;">
+                    <div class="col-6" >
                       <span class="mdl-list__item-secondary-content">
                         <input name="formco2max" class="form-control" placeholder="Max en PPM" type="text">
                       </span>
@@ -324,7 +321,7 @@
                     </div>
                   </li>
 
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="submit" class=" btn btn-primary mt-3 pl-5 pr-5">Enviar</button>
 
                 </form>
               </ul>
