@@ -495,9 +495,8 @@
     if (datos.get('formtempmin') === "" || datos.get('formtempmax') === "" || datos.get('formhummin') === "" || datos.get('formhummax') === "" || datos.get('formco2min') === "" || datos.get('formco2max') === "" || datos.get('formtime') === "") {
       console.log('completar todos los campos');
       Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'completa todos los campos!'          
+        icon: 'error',
+        title: 'Debes completa todos los campos!'                   
       })
     } 
     else {
