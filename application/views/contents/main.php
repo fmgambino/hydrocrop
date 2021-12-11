@@ -224,9 +224,9 @@
                     <label class="switch mr-2">
                       <input onchange="sw1_change()" type="checkbox" id="display_sw1">
                       <span class="slider round"></span>
-                    </label>                    
+                    </label>
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>" class="hc-icono-cancel" id="icono1" alt="">
+                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono1" alt="">
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -237,7 +237,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono-cancel" id="icono2" alt="">
+                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono2" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -249,7 +249,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono-cancel" id="icono3" alt="">
+                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono3" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -498,7 +498,7 @@
     if (datos.get('formtempmin') === "" || datos.get('formtempmax') === "" || datos.get('formhummin') === "" || datos.get('formhummax') === "" || datos.get('formco2min') === "" || datos.get('formco2max') === "" || datos.get('formtime') === "") {
       console.log('completar todos los campos');
       Swal.fire({
-        title: 'Debes Completar Todos Los Campos!',        
+        title: 'Debes Completar Todos Los Campos!',
         icon: 'error',
         confirmButtonText: 'ok'
       })
@@ -571,6 +571,10 @@
       var switch3 = splitted[7];
       var cdtv = splitted[8];
 
+      var estado1 = "1";
+      var estado2 = splitted[10];
+      var estado3 = splitted[11];
+
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
@@ -578,7 +582,7 @@
       $("#display_ph").html(ph);
       $("#display_cdtv").html(cdtv);
 
-      
+
 
       if (niv == 1) {
         $("#display_niv").html("ALTO");
@@ -586,11 +590,11 @@
         $("#display_niv").html("OPTIMO");
       }
 
-      if (switch1 == "1") {              
+      if (switch1 == "1") {
         $("#display_sw1").prop('checked', true);
-        
+
       } else {
-        $("#display_sw1").prop('checked', "");        
+        $("#display_sw1").prop('checked', "");
       }
 
       if (switch2 == "1") {
@@ -605,7 +609,41 @@
         $("#display_sw3").prop('checked', "");
       }
 
+      var img1 = "<?php echo base_url('images/cancelblanco.png') ?>";
+      var img2 = "<?php echo base_url('images/checkblanco.png') ?>";
+      var imagen4 = document.getElementById('icono1');
+      var imagen5 = document.getElementById('icono1');
+      var imagen6 = document.getElementById('icono1');
 
+      if (estado1 == "1") {
+        imagen4.src = img2;
+        imagen4.classList.remove("hc-icono-cancel");
+        imagen4.classList.add("hc-icono-check");
+      } else {
+        imagen4.src = img1;
+        imagen4.classList.remove("hc-icono-check");
+        imagen4.classList.add("hc-icono-cancel");
+      }
+
+      if (estado2 == "1") {
+        imagen5.src = img2;
+        imagen5.classList.remove("hc-icono-cancel");
+        imagen5.classList.add("hc-icono-check");
+      } else {
+        imagen5.src = img1;
+        imagen5.classList.remove("hc-icono-check");
+        imagen5.classList.add("hc-icono-cancel");
+      }
+
+      if (estado3 == "1") {
+        imagen6.src = img2;
+        imagen6.classList.remove("hc-icono-cancel");
+        imagen6.classList.add("hc-icono-check");
+      } else {
+        imagen6.src = img1;
+        imagen6.classList.remove("hc-icono-check");
+        imagen6.classList.add("hc-icono-cancel");
+      }
     }
 
 
@@ -618,12 +656,11 @@
   client.on('error', (error) => {
     console.log('Connect Error:', error);
   })
-  
-  var img1 = "<?php echo base_url('images/cancelblanco.png')?>";
-  var img2 = "<?php echo base_url('images/checkblanco.png')?>" ;
+
+  var img1 = "<?php echo base_url('images/cancelblanco.png') ?>";
+  var img2 = "<?php echo base_url('images/checkblanco.png') ?>";
 
   function sw1_change() {
-    console.log("ingrese a change 1");
     var imagen1 = document.getElementById('icono1');
     if ($('#display_sw1').is(":checked")) {
       client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker             
@@ -632,7 +669,7 @@
       imagen1.classList.add("hc-icono-check");
     } else {
       client.publish(device_topic + 'actions/sw1', "0");
-      imagen1.src = img1; 
+      imagen1.src = img1;
       imagen1.classList.remove("hc-icono-check");
       imagen1.classList.add("hc-icono-cancel");
     }
@@ -644,7 +681,7 @@
       client.publish(device_topic + 'actions/sw2', "1");
       imagen2.src = img2;
       imagen2.classList.remove("hc-icono-cancel");
-      imagen2.classList.add("hc-icono-check");  
+      imagen2.classList.add("hc-icono-check");
     } else {
       client.publish(device_topic + 'actions/sw2', "0");
       imagen2.src = img1;
