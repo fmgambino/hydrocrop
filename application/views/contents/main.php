@@ -578,8 +578,7 @@
       $("#display_ph").html(ph);
       $("#display_cdtv").html(cdtv);
 
-      var img1 = "<?php echo base_url('images/cancel.png')?>";
-      var img2 = "<?php echo base_url('images/check.png')?>" ;
+      
 
       if (niv == 1) {
         $("#display_niv").html("ALTO");
@@ -587,16 +586,11 @@
         $("#display_niv").html("OPTIMO");
       }
 
-      if (switch1 == "1") {   
-        console.log("ingrese en if shitch1");     
+      if (switch1 == "1") {              
         $("#display_sw1").prop('checked', true);
-        var imagen1 = document.getElementById('icono1');
-        imagen1.src = img2;
-        console.log("cambio imagen 1 por imagen 2");
+        
       } else {
-        $("#display_sw1").prop('checked', "");
-        imagen1.src = img1;
-        console.log("cambio imagen 2 por imagen 1");
+        $("#display_sw1").prop('checked', "");        
       }
 
       if (switch2 == "1") {
@@ -625,15 +619,20 @@
     console.log('Connect Error:', error);
   })
   
-  
+  var img1 = "<?php echo base_url('images/cancel.png')?>";
+  var img2 = "<?php echo base_url('images/check.png')?>" ;
 
   function sw1_change() {
     console.log("ingrese a change 1");
+    var imagen1 = document.getElementById('icono1');
     if ($('#display_sw1').is(":checked")) {
       client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker 
-      console.log("cambio imagen 1 por imagen 2");     
+      console.log("cambio imagen 1 por imagen 2");       
+      imagen1.src = img2;
+      console.log("cambio imagen 1 por imagen 2");    
     } else {
       client.publish(device_topic + 'actions/sw1', "0");
+      imagen1.src = img1;
       console.log("cambio imagen 2 por imagen 1");
     }
   }
