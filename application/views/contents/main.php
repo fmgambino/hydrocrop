@@ -626,32 +626,33 @@
     console.log("ingrese a change 1");
     var imagen1 = document.getElementById('icono1');
     if ($('#display_sw1').is(":checked")) {
-      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker 
-      console.log("cambio imagen 1 por imagen 2");       
-      imagen1.src = img2;
-      console.log("cambio imagen 1 por imagen 2");    
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker             
+      imagen1.src = img2;      
     } else {
       client.publish(device_topic + 'actions/sw1', "0");
-      imagen1.src = img1;
-      console.log("cambio imagen 2 por imagen 1");
+      imagen1.src = img1;     
     }
   }
 
   function sw2_change() {
-    
+    var imagen2 = document.getElementById('icono2');
     if ($('#display_sw2').is(":checked")) {
       client.publish(device_topic + 'actions/sw2', "1");
+      imagen1.src = img2;  
     } else {
       client.publish(device_topic + 'actions/sw2', "0");
+      imagen1.src = img1;
     }
   }
 
   function sw3_change() {
-    
+    var imagen3 = document.getElementById('icono3');
     if ($('#display_sw3').is(":checked")) {
       client.publish(device_topic + 'actions/sw3', "1");
+      imagen1.src = img2;
     } else {
       client.publish(device_topic + 'actions/sw3', "0");
+      imagen1.src = img1;
     }
   }
 
