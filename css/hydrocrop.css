@@ -311,14 +311,16 @@ canvas{
     background-color: #2196f3;
     border-radius: 100%;
     transition-duration: 2s;    
-    font-size: 35px !important;  
+    height: 35px;
+    margin-right: -10px; 
        
 }
 .hc-icono-cancel{
     background-color: #cccccc;
     border-radius: 100%;
     transition-duration: 2s;    
-    font-size: 35px !important;   
+    height: 35px;
+    margin-right: -10px;   
         
 }
 
