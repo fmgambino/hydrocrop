@@ -226,7 +226,7 @@
                       <span class="slider round"></span>
                     </label>                    
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>" class="hc-icono" id="icono1" alt="">
+                  <img src="<?php echo base_url('images/cancel.png')?>" class="hc-icono-cancel" id="icono1" alt="">
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
@@ -237,7 +237,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono" id="icono2" alt="">
+                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono-cancel" id="icono2" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -249,7 +249,7 @@
                       <span class="slider round"></span>
                     </label>
                   </span>
-                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono" id="icono3" alt="">
+                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono-cancel" id="icono3" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
