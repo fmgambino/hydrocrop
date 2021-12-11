@@ -642,10 +642,14 @@
     var imagen2 = document.getElementById('icono2');
     if ($('#display_sw2').is(":checked")) {
       client.publish(device_topic + 'actions/sw2', "1");
-      imagen2.src = img2;  
+      imagen2.src = img2;
+      imagen2.classList.remove("hc-icono-cancel");
+      imagen2.classList.add("hc-icono-check");  
     } else {
       client.publish(device_topic + 'actions/sw2', "0");
       imagen2.src = img1;
+      imagen2.classList.remove("hc-icono-check");
+      imagen2.classList.add("hc-icono-cancel");
     }
   }
 
@@ -654,9 +658,13 @@
     if ($('#display_sw3').is(":checked")) {
       client.publish(device_topic + 'actions/sw3', "1");
       imagen3.src = img2;
+      imagen3.classList.remove("hc-icono-cancel");
+      imagen3.classList.add("hc-icono-check");
     } else {
       client.publish(device_topic + 'actions/sw3', "0");
       imagen3.src = img1;
+      imagen3.classList.remove("hc-icono-check");
+      imagen3.classList.add("hc-icono-cancel");
     }
   }
 
