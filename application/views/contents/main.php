@@ -314,7 +314,7 @@
                     <div style="width: 50%; text-align: initial; ">
                       <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE CIRCULACION DE AGUA</span>
                     </div>
-                    <div style="width: 50%; padding-left: 10px;">
+                    <div style="width: 50%; padding-left: 15px; padding-right: 15px;">
                       <span class="mdl-list__item-secondary-content ">
                         <input name="formtime" id="" class="form-control " placeholder="Tiempo en min." type="text">
                       </span>
