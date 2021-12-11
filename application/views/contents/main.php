@@ -615,12 +615,14 @@
       var imagen4 = document.getElementById('icono1');
       var imagen5 = document.getElementById('icono1');
       var imagen6 = document.getElementById('icono1');
-
+      console.log("ingrese estado = 1");
       if (estado1 == "1") {
+        console.log("ingrese estado1 = 1");
         imagen4.src = img4;
         imagen4.classList.remove("hc-icono-cancel");
         imagen4.classList.add("hc-icono-check");
       } else {
+        console.log("ingrese estado1 = 0");
         imagen4.src = img3;
         imagen4.classList.remove("hc-icono-check");
         imagen4.classList.add("hc-icono-cancel");
