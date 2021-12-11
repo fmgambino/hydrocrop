@@ -553,15 +553,15 @@
     })
   })
   var estado = "1";
+  var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
+  var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
   console.log("asigno estado = 1");
   if(estado == "1"){
-    
-      var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
-      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
+     
 
       var imagen4 = document.getElementById('icono1');
-      var imagen5 = document.getElementById('icono1');
-      var imagen6 = document.getElementById('icono1');
+      var imagen5 = document.getElementById('icono2');
+      var imagen6 = document.getElementById('icono3');
 
       console.log("ingrese estado = 1");
 
