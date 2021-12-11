@@ -309,12 +309,12 @@ canvas{
 
 .hc-icono-check{
     transition-duration: 2s;    
-    font-size: 35px !important;    
-    filter: invert(1);    
+    font-size: 35px !important;  
+       
 }
 .hc-icono-cancel{
     transition-duration: 2s;    
-    font-size: 35px !important;    
-    filter: invert(1);    
+    font-size: 35px !important;   
+        
 }
 
