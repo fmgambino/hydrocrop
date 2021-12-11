@@ -552,12 +552,12 @@
 
     })
   })
-  var estado1 = "1";
+  var estado = "1";
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
-    if (topic == device_topic + "data") {
+    if (estado == "1") { //if (topic == device_topic + "data") {
       var splitted = message.toString().split(",");
 
       var co2 = splitted[0];
@@ -572,7 +572,7 @@
       var switch3 = splitted[7];
       var cdtv = splitted[8];
 
-      //var estado1 = "1";
+      var estado1 = "1";
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
