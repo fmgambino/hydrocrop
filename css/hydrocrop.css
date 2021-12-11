@@ -310,5 +310,5 @@ canvas{
 .hc-icono{
     color: #2DE14F;
     font-size: 35px !important;
-    
+    transition: width 2s, height 4s;
 }
