@@ -554,6 +554,52 @@
   })
   var estado = "1";
   console.log("asigno estado = 1");
+  if(estado == "1"){
+    
+      var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
+      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
+
+      var imagen4 = document.getElementById('icono1');
+      var imagen5 = document.getElementById('icono1');
+      var imagen6 = document.getElementById('icono1');
+
+      console.log("ingrese estado = 1");
+
+      if (estado1 == "1") {
+        console.log("ingrese estado1 = 1");
+        imagen4.src = img4;
+        imagen4.classList.remove("hc-icono-cancel");
+        imagen4.classList.add("hc-icono-check");
+      } else {
+        console.log("ingrese estado1 = 0");
+        imagen4.src = img3;
+        imagen4.classList.remove("hc-icono-check");
+        imagen4.classList.add("hc-icono-cancel");
+      }
+
+      if (estado2 == "1") {
+        imagen5.src = img4;
+        imagen5.classList.remove("hc-icono-cancel");
+        imagen5.classList.add("hc-icono-check");
+      } else {
+        imagen5.src = img3;
+        imagen5.classList.remove("hc-icono-check");
+        imagen5.classList.add("hc-icono-cancel");
+      }
+
+      if (estado3 == "1") {
+        imagen6.src = img4;
+        imagen6.classList.remove("hc-icono-cancel");
+        imagen6.classList.add("hc-icono-check");
+      } else {
+        imagen6.src = img3;
+        imagen6.classList.remove("hc-icono-check");
+        imagen6.classList.add("hc-icono-cancel");
+      }
+  }
+
+
+
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
@@ -610,43 +656,7 @@
         $("#display_sw3").prop('checked', "");
       }
 
-      var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
-      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
-      var imagen4 = document.getElementById('icono1');
-      var imagen5 = document.getElementById('icono1');
-      var imagen6 = document.getElementById('icono1');
-      console.log("ingrese estado = 1");
-      if (estado1 == "1") {
-        console.log("ingrese estado1 = 1");
-        imagen4.src = img4;
-        imagen4.classList.remove("hc-icono-cancel");
-        imagen4.classList.add("hc-icono-check");
-      } else {
-        console.log("ingrese estado1 = 0");
-        imagen4.src = img3;
-        imagen4.classList.remove("hc-icono-check");
-        imagen4.classList.add("hc-icono-cancel");
-      }
-
-      if (estado2 == "1") {
-        imagen5.src = img4;
-        imagen5.classList.remove("hc-icono-cancel");
-        imagen5.classList.add("hc-icono-check");
-      } else {
-        imagen5.src = img3;
-        imagen5.classList.remove("hc-icono-check");
-        imagen5.classList.add("hc-icono-cancel");
-      }
-
-      if (estado3 == "1") {
-        imagen6.src = img4;
-        imagen6.classList.remove("hc-icono-cancel");
-        imagen6.classList.add("hc-icono-check");
-      } else {
-        imagen6.src = img3;
-        imagen6.classList.remove("hc-icono-check");
-        imagen6.classList.add("hc-icono-cancel");
-      }
+      
     }
 
 
