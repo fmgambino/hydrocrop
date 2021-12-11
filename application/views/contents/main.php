@@ -312,7 +312,7 @@
 
                   <li class="mdl-list__item list__item--border-top">
                     <div style="width: 50%; text-align: initial; ">
-                      <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE CIRCULACION DE H20</span>
+                      <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE CIRCULACION DE AGUA</span>
                     </div>
                     <div style="width: 50%; padding-left: 10px;">
                       <span class="mdl-list__item-secondary-content ">
