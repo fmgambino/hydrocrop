@@ -5,8 +5,8 @@
     <div class="container-fluid">
       <div class="">
         <!-- widget temperatura-->
-        <div id="m-booked-prime-days-99676">
-          <div class="weather-customize widget-type-prime-days">
+        <div id="m-booked-prime-days-99676 ">
+          <div class="weather-customize widget-type-prime-days .d-block d-sm-block d-md-none">
             <div class="booked-prime-days-in">
               <div class="booked-prime-days-data">
                 <div class="booked-pd-today">
@@ -25,349 +25,326 @@
                     <div class="booked-pd booked-pd-l"><span>Baja:</span><span class="plus">+</span>16</div>
                   </div>
                 </div>
-                <div class="booked-pd-ndays">
-                  <div class="booked-pd-nitem">
-                    <div class="booked-pd-nidi wrz-sml wrzs-03"></div>
-                    <div class="booked-pd-nidw">Dom</div>
-                  </div>
-                  <div class="booked-pd-nitem">
-                    <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                    <div class="booked-pd-nidw">Lun</div>
-                  </div>
-                  <div class="booked-pd-nitem">
-                    <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                    <div class="booked-pd-nidw">Mar</div>
-                  </div>
-                  <div class="booked-pd-nitem">
-                    <div class="booked-pd-nidi wrz-sml wrzs-18"></div>
-                    <div class="booked-pd-nidw">Mié</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row ">
-        <!-- TEMP -->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-naranja">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Temperatura</h2>
-                <i class="material-icons">thermostat</i>
-              </div>
-              <div class="mdl-card__supporting-text mdl-card--expand">
-                <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
-
-                <script type="text/javascript">
-                  var css_file = document.createElement("link");
-                  var widgetUrl = location.href;
-                  css_file.setAttribute("rel", "stylesheet");
-                  css_file.setAttribute("type", "text/css");
-                  css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-prime-days.css?v=0.0.1');
-                  document.getElementsByTagName("head")[0].appendChild(css_file);
-
-                  function setWidgetData_99676(data) {
-                    if (typeof(data) != 'undefined' && data.results.length > 0) {
-                      for (var i = 0; i < data.results.length; ++i) {
-                        var objMainBlock = document.getElementById('m-booked-prime-days-99676');
-                        if (objMainBlock !== null) {
-                          var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type);
-                          objMainBlock.innerHTML = data.results[i].html_code;
-                          if (copyBlock !== null) objMainBlock.appendChild(copyBlock);
-                        }
-                      }
-                    } else {
-                      alert('data=undefined||data.results is empty');
-                    }
-                  }
-                  var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=37228;type=6;scode=124;ltid=3457;domid=582;anc_id=60187;countday=4;cmetric=1;wlangID=4;color=ffffff;wwidth=250;header_color=ffffff;text_color=ffffff;link_color=ffffff;border_form=1;footer_color=ffffff;footer_text_color=ffffff;transparent=1;v=0.0.1";
-                  widgetSrc += ';ref=' + widgetUrl;
-                  widgetSrc += ';rand_id=99676';
-                  var weatherBookedScript = document.createElement("script");
-                  weatherBookedScript.setAttribute("type", "text/javascript");
-                  weatherBookedScript.src = widgetSrc;
-                  document.body.appendChild(weatherBookedScript)
-                </script><!-- weather widget end -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- HUM-->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-celeste">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text ">Humedad %</h2>
-
-
-              </div>
-              <div class="mdl-card__supporting-text mdl-card--expand">
-                <p id="display_hum" class="weather-temperature">--</p>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Nivel CO2 -->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris ">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">CO2</h2>
-                <i class="material-icons">local_fire_department</i>
-                <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-card__supporting-text mdl-card--expand">
-                <p id="display_co2" class="weather-temperature">--<sup>&deg;</sup></p>
-
-
-                <script type="text/javascript">
-                  var css_file = document.createElement("link");
-                  var widgetUrl = location.href;
-                  css_file.setAttribute("rel", "stylesheet");
-                  css_file.setAttribute("type", "text/css");
-                  css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-prime-days.css?v=0.0.1');
-                  document.getElementsByTagName("head")[0].appendChild(css_file);
-
-                  function setWidgetData_99676(data) {
-                    if (typeof(data) != 'undefined' && data.results.length > 0) {
-                      for (var i = 0; i < data.results.length; ++i) {
-                        var objMainBlock = document.getElementById('m-booked-prime-days-99676');
-                        if (objMainBlock !== null) {
-                          var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type);
-                          objMainBlock.innerHTML = data.results[i].html_code;
-                          if (copyBlock !== null) objMainBlock.appendChild(copyBlock);
-                        }
-                      }
-                    } else {
-                      alert('data=undefined||data.results is empty');
-                    }
-                  }
-                  var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=37228;type=6;scode=124;ltid=3457;domid=582;anc_id=60187;countday=4;cmetric=1;wlangID=4;color=ffffff;wwidth=250;header_color=ffffff;text_color=ffffff;link_color=ffffff;border_form=1;footer_color=ffffff;footer_text_color=ffffff;transparent=1;v=0.0.1";
-                  widgetSrc += ';ref=' + widgetUrl;
-                  widgetSrc += ';rand_id=99676';
-                  var weatherBookedScript = document.createElement("script");
-                  weatherBookedScript.setAttribute("type", "text/javascript");
-                  weatherBookedScript.src = widgetSrc;
-                  document.body.appendChild(weatherBookedScript)
-                </script><!-- weather widget end -->
-
-                <!-- <p class="weather-description"> -->
-
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- pH -->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-verde">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">pH</h2>
-                <i class="material-icons">colorize</i>
-
-
-              </div>
-              <p id="display_ph" class="weather-temperature">--</p>
-
-            </div>
-          </div>
-        </div>
-        <!-- Conductividad -->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Conductividad</h2>
-                <i class="material-icons">bolt</i>
-              </div>
-              <p id="display_cdtv" class="weather-temperature">--</p>
-            </div>
-          </div>
-        </div>
-        <!-- H2O -->
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="mdl-card  weather">
-            <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul-2">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text ">Nivel H2O</h2>
-                <i class="material-icons">water</i>
-              </div>
-              <div>
-                <p id="display_niv" class="weather-temperature hc-textresposive p-1">--</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-      <!-- Actuadores-->
-      <div class="row">
-        <div class="col-12 col-md-4 hc-box-a">
-          <div class="mdl-card  trending">
-            <div class="mdl-card__supporting-text hc-color-rojo">
-              <div class="mdl-card__title ">
-                <h2 class="mdl-card__title-text">Actuadores</h2>
-              </div>
-              <ul class="mdl-list">
-                <li class="mdl-list__item">
-                  <span class="mdl-list__item-primary-content list__item-text">BOMBA DE AGUA</span>
-                  <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
-                    <!-- SWITCH-->
-                    <label class="switch mr-2">
-                      <input onchange="sw1_change()" type="checkbox" id="display_sw1">
-                      <span class="slider round"></span>
-                    </label>
-                  </span>
-                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono1" alt="">
-                </li>
-                <li class="mdl-list__item list__item--border-top">
-                  <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
-                  <span class="mdl-list__item-secondary-content " style="padding-top: 6px;">
-                    <!-- SWITCH-->
-                    <label class="switch mr-2">
-                      <input onchange="sw2_change()" type="checkbox" id="display_sw2">
-                      <span class="slider round"></span>
-                    </label>
-                  </span>
-                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono2" alt="">
-                </li>
-
-                <li class="mdl-list__item list__item--border-top">
-                  <span class="mdl-list__item-primary-content list__item-text">DIFUSOR C02</span>
-                  <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
-                    <!-- SWITCH-->
-                    <label class="switch mr-2">
-                      <input onchange="sw3_change()" type="checkbox" id="display_sw3">
-                      <span class="slider round"></span>
-                    </label>
-                  </span>
-                  <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono3" alt="">
-                </li>
-
-                <li class="mdl-list__item list__item--border-top">
-                  <span class="mdl-list__item-primary-content list__item-text">LUCES UV</span>
-                  <span class="mdl-list__item-secondary-content">
-                    <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="100" tabindex="0">
-                  </span>
-
-                </li>
-
-                <div class="mdl-card__title ">
-                  <h2 class="mdl-card__title-text">Parametros </h2>
-                </div>
-
-                <form id="formulario">
-                  <li class="mdl-list__item list__item--border-top row hc-hover">
-                    <div class="col-12 text-center mb-3">
-                      <span class="">TEMPERATURA en °C</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formtempmin" class="form-control" placeholder="Min en °C" type="text">
-                      </span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formtempmax" class="form-control" placeholder="Max en °C" type="text">
-                      </span>
-                    </div>
-                  </li>
-
-                  <li class="mdl-list__item list__item--border-top row hc-hover">
-                    <div class="col-12 text-center mb-3">
-                      <span class="">HUMEDAD en %</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formhummin" class="form-control" placeholder="Min en %" type="text">
-                      </span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formhummax" class="form-control" placeholder="Max en %" type="text">
-                      </span>
-                    </div>
-                  </li>
-
-                  <li class="mdl-list__item list__item--border-top row hc-hover">
-                    <div class="col-12 text-center mb-3">
-                      <span class="">CO2 en PPM</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formco2min" class="form-control" placeholder="Min en PPM" type="text">
-                      </span>
-                    </div>
-                    <div class="col-6">
-                      <span class="mdl-list__item-secondary-content">
-                        <input name="formco2max" class="form-control" placeholder="Max en PPM" type="text">
-                      </span>
-                    </div>
-                  </li>
-
-                  <li class="mdl-list__item list__item--border-top">
-                    <div style="width: 50%; text-align: initial; ">
-                      <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE CIRCULACION DE AGUA</span>
-                    </div>
-                    <div style="width: 50%; padding-left: 15px; padding-right: 15px;">
-                      <span class="mdl-list__item-secondary-content ">
-                        <input name="formtime" id="" class="form-control " placeholder="Tiempo en min." type="text">
-                      </span>
-                    </div>
-                  </li>
-
-                  <button type="submit" class=" btn btn-primary mt-3 pl-5 pr-5">Enviar</button>
-
-                </form>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-8 hc-box-b">
-          <!-- Table-->
-          <!-- Line chart-->
-          <div class="">
-            <div class="mdl-card mdl-shadow--2dp line-chart">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-naranja">Nivel CO2</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <canvas id="my_chart" width="300" height="300"></canvas>
-              </div>
-            </div>
-          </div>
-          <!-- Table-->
-
-          <!-- Table-->
-          <!-- Line chart 2-->
-          <div class="">
-            <div class="mdl-card mdl-shadow--2dp line-chart">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text hc-color-text-naranja">Tem. Hambiente</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <canvas id="my_chart2" width="300" height="300"></canvas>
-              </div>
-            </div>
-          </div>
-          <!-- Table-->
-
-
         </div>
       </div>
     </div>
+    <div class="row ">
+      <!-- TEMP -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-naranja">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Temperatura</h2>
+              <i class="material-icons">thermostat</i>
+            </div>
+            <div class="mdl-card__supporting-text mdl-card--expand">
+              <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HUM-->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-celeste">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text ">Humedad %</h2>
+            </div>
+            <div class="mdl-card__supporting-text mdl-card--expand">
+              <p id="display_hum" class="weather-temperature">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nivel CO2 -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-gris ">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">CO2</h2>
+              <i class="material-icons">local_fire_department</i>
+              <div class="mdl-layout-spacer"></div>
+            </div>
+            <div class="mdl-card__supporting-text mdl-card--expand">
+              <p id="display_co2" class="weather-temperature">--<sup>&deg;</sup></p>
+
+
+              <script type="text/javascript">
+                var css_file = document.createElement("link");
+                var widgetUrl = location.href;
+                css_file.setAttribute("rel", "stylesheet");
+                css_file.setAttribute("type", "text/css");
+                css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-prime-days.css?v=0.0.1');
+                document.getElementsByTagName("head")[0].appendChild(css_file);
+
+                function setWidgetData_99676(data) {
+                  if (typeof(data) != 'undefined' && data.results.length > 0) {
+                    for (var i = 0; i < data.results.length; ++i) {
+                      var objMainBlock = document.getElementById('m-booked-prime-days-99676');
+                      if (objMainBlock !== null) {
+                        var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type);
+                        objMainBlock.innerHTML = data.results[i].html_code;
+                        if (copyBlock !== null) objMainBlock.appendChild(copyBlock);
+                      }
+                    }
+                  } else {
+                    alert('data=undefined||data.results is empty');
+                  }
+                }
+                var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=37228;type=6;scode=124;ltid=3457;domid=582;anc_id=60187;countday=4;cmetric=1;wlangID=4;color=ffffff;wwidth=250;header_color=ffffff;text_color=ffffff;link_color=ffffff;border_form=1;footer_color=ffffff;footer_text_color=ffffff;transparent=1;v=0.0.1";
+                widgetSrc += ';ref=' + widgetUrl;
+                widgetSrc += ';rand_id=99676';
+                var weatherBookedScript = document.createElement("script");
+                weatherBookedScript.setAttribute("type", "text/javascript");
+                weatherBookedScript.src = widgetSrc;
+                document.body.appendChild(weatherBookedScript)
+              </script><!-- weather widget end -->
+
+              <!-- <p class="weather-description"> -->
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pH -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-verde">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">pH</h2>
+              <i class="material-icons">colorize</i>
+
+
+            </div>
+            <p id="display_ph" class="weather-temperature">--</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Conductividad -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Conductividad</h2>
+              <i class="material-icons">bolt</i>
+            </div>
+            <p id="display_cdtv" class="weather-temperature">--</p>
+          </div>
+        </div>
+      </div>
+      <!-- H2O -->
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="mdl-card  weather">
+          <div class="mdl-card__supporting-text mdl-card--expand hc-color-azul-2">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text ">Nivel H2O</h2>
+              <i class="material-icons">water</i>
+            </div>
+            <div>
+              <p id="display_niv" class="weather-temperature hc-textresposive p-1">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Actuadores-->
+    <div class="row">
+      <div class="col-12 col-md-4 hc-box-a">
+        <div class="mdl-card  trending">
+          <div class="mdl-card__supporting-text hc-color-rojo">
+            <div class="mdl-card__title ">
+              <h2 class="mdl-card__title-text">Actuadores</h2>
+            </div>
+            <ul class="mdl-list">
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content list__item-text">BOMBA DE AGUA</span>
+                <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
+                  <!-- SWITCH-->
+                  <label class="switch mr-2">
+                    <input onchange="sw1_change()" type="checkbox" id="display_sw1">
+                    <span class="slider round"></span>
+                  </label>
+                </span>
+                <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono1" alt="">
+              </li>
+              <li class="mdl-list__item list__item--border-top">
+                <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
+                <span class="mdl-list__item-secondary-content " style="padding-top: 6px;">
+                  <!-- SWITCH-->
+                  <label class="switch mr-2">
+                    <input onchange="sw2_change()" type="checkbox" id="display_sw2">
+                    <span class="slider round"></span>
+                  </label>
+                </span>
+                <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono2" alt="">
+              </li>
+
+              <li class="mdl-list__item list__item--border-top">
+                <span class="mdl-list__item-primary-content list__item-text">DIFUSOR C02</span>
+                <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
+                  <!-- SWITCH-->
+                  <label class="switch mr-2">
+                    <input onchange="sw3_change()" type="checkbox" id="display_sw3">
+                    <span class="slider round"></span>
+                  </label>
+                </span>
+                <img src="<?php echo base_url('images/cancel.png') ?>" class="hc-icono-cancel" id="icono3" alt="">
+              </li>
+
+              <li class="mdl-list__item list__item--border-top">
+                <span class="mdl-list__item-primary-content list__item-text">LUCES UV</span>
+                <span class="mdl-list__item-secondary-content">
+                  <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="100" tabindex="0">
+                </span>
+
+              </li>
+
+              <div class="mdl-card__title ">
+                <h2 class="mdl-card__title-text">Parametros </h2>
+              </div>
+
+              <form id="formulario">
+                <li class="mdl-list__item list__item--border-top row hc-hover">
+                  <div class="col-12 text-center mb-3">
+                    <span class="">TEMPERATURA en °C</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formtempmin" class="form-control" placeholder="Min en °C" type="text">
+                    </span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formtempmax" class="form-control" placeholder="Max en °C" type="text">
+                    </span>
+                  </div>
+                </li>
+
+                <li class="mdl-list__item list__item--border-top row hc-hover">
+                  <div class="col-12 text-center mb-3">
+                    <span class="">HUMEDAD en %</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formhummin" class="form-control" placeholder="Min en %" type="text">
+                    </span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formhummax" class="form-control" placeholder="Max en %" type="text">
+                    </span>
+                  </div>
+                </li>
+
+                <li class="mdl-list__item list__item--border-top row hc-hover">
+                  <div class="col-12 text-center mb-3">
+                    <span class="">CO2 en PPM</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formco2min" class="form-control" placeholder="Min en PPM" type="text">
+                    </span>
+                  </div>
+                  <div class="col-6">
+                    <span class="mdl-list__item-secondary-content">
+                      <input name="formco2max" class="form-control" placeholder="Max en PPM" type="text">
+                    </span>
+                  </div>
+                </li>
+
+                <li class="mdl-list__item list__item--border-top">
+                  <div style="width: 50%; text-align: initial; ">
+                    <span class="mdl-list__item-primary-content list__item-text ">TIEMPO DE CIRCULACION DE AGUA</span>
+                  </div>
+                  <div style="width: 50%; padding-left: 15px; padding-right: 15px;">
+                    <span class="mdl-list__item-secondary-content ">
+                      <input name="formtime" id="" class="form-control " placeholder="Tiempo en min." type="text">
+                    </span>
+                  </div>
+                </li>
+
+                <button type="submit" class=" btn btn-primary mt-3 pl-5 pr-5">Enviar</button>
+
+              </form>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8 hc-box-b">
+        <!-- Table-->
+        <!-- Line chart-->
+        <div class="">
+          <div class="mdl-card mdl-shadow--2dp line-chart">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text hc-color-text-naranja">Nivel CO2</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <canvas id="my_chart" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- Table-->
+
+        <!-- Table-->
+        <!-- Line chart 2-->
+        <div class="">
+          <div class="mdl-card mdl-shadow--2dp line-chart">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text hc-color-text-naranja">Tem. Hambiente</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <canvas id="my_chart2" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- Table-->
+
+
+      </div>
+    </div>
+  </div>
   </div>
 </main>
+<script type="text/javascript">
+  var css_file = document.createElement("link");
+  var widgetUrl = location.href;
+  css_file.setAttribute("rel", "stylesheet");
+  css_file.setAttribute("type", "text/css");
+  css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-prime-days.css?v=0.0.1');
+  document.getElementsByTagName("head")[0].appendChild(css_file);
 
+  function setWidgetData_99676(data) {
+    if (typeof(data) != 'undefined' && data.results.length > 0) {
+      for (var i = 0; i < data.results.length; ++i) {
+        var objMainBlock = document.getElementById('m-booked-prime-days-99676');
+        if (objMainBlock !== null) {
+          var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type);
+          objMainBlock.innerHTML = data.results[i].html_code;
+          if (copyBlock !== null) objMainBlock.appendChild(copyBlock);
+        }
+      }
+    } else {
+      alert('data=undefined||data.results is empty');
+    }
+  }
+  var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=37228;type=6;scode=124;ltid=3457;domid=582;anc_id=60187;countday=4;cmetric=1;wlangID=4;color=ffffff;wwidth=250;header_color=ffffff;text_color=ffffff;link_color=ffffff;border_form=1;footer_color=ffffff;footer_text_color=ffffff;transparent=1;v=0.0.1";
+  widgetSrc += ';ref=' + widgetUrl;
+  widgetSrc += ';rand_id=99676';
+  var weatherBookedScript = document.createElement("script");
+  weatherBookedScript.setAttribute("type", "text/javascript");
+  weatherBookedScript.src = widgetSrc;
+  document.body.appendChild(weatherBookedScript)
+</script><!-- weather widget end -->
 <script>
   var ctx = document.getElementById('my_chart').getContext('2d');
   var ctx2 = document.getElementById('my_chart2').getContext('2d');
@@ -610,7 +587,7 @@
       }
 
       var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
-      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";      
+      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
 
       var imagen4 = document.getElementById('icono1');
       var imagen5 = document.getElementById('icono2');
@@ -651,8 +628,6 @@
       }
 
     }
-
-
   })
 
   client.on('reconnect', (error) => {

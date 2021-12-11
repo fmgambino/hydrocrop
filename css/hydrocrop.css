@@ -324,3 +324,16 @@ canvas{
          
 }
 
+/* widgen clima */
+
+.booked-prime-days-data .booked-pd-ndays{
+display: none !important;
+}
+
+.booked-prime-days-data{
+    padding: none !important ;
+}
+
+.hc-margin{
+    margin: auto !important;
+}
