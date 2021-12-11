@@ -610,38 +610,38 @@
         $("#display_sw3").prop('checked', "");
       }
 
-      var img1 = "<?php echo base_url('images/cancelblanco.png') ?>";
-      var img2 = "<?php echo base_url('images/checkblanco.png') ?>";
+      var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
+      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
       var imagen4 = document.getElementById('icono1');
       var imagen5 = document.getElementById('icono1');
       var imagen6 = document.getElementById('icono1');
 
       if (estado1 == "1") {
-        imagen4.src = img2;
+        imagen4.src = img4;
         imagen4.classList.remove("hc-icono-cancel");
         imagen4.classList.add("hc-icono-check");
       } else {
-        imagen4.src = img1;
+        imagen4.src = img3;
         imagen4.classList.remove("hc-icono-check");
         imagen4.classList.add("hc-icono-cancel");
       }
 
       if (estado2 == "1") {
-        imagen5.src = img2;
+        imagen5.src = img4;
         imagen5.classList.remove("hc-icono-cancel");
         imagen5.classList.add("hc-icono-check");
       } else {
-        imagen5.src = img1;
+        imagen5.src = img3;
         imagen5.classList.remove("hc-icono-check");
         imagen5.classList.add("hc-icono-cancel");
       }
 
       if (estado3 == "1") {
-        imagen6.src = img2;
+        imagen6.src = img4;
         imagen6.classList.remove("hc-icono-cancel");
         imagen6.classList.add("hc-icono-check");
       } else {
-        imagen6.src = img1;
+        imagen6.src = img3;
         imagen6.classList.remove("hc-icono-check");
         imagen6.classList.add("hc-icono-cancel");
       }
