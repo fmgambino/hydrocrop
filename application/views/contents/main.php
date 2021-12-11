@@ -552,6 +552,7 @@
 
     })
   })
+  var estado1 = "1";
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
@@ -571,7 +572,7 @@
       var switch3 = splitted[7];
       var cdtv = splitted[8];
 
-      var estado1 = "1";
+      //var estado1 = "1";
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
