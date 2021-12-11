@@ -638,10 +638,10 @@
     var imagen2 = document.getElementById('icono2');
     if ($('#display_sw2').is(":checked")) {
       client.publish(device_topic + 'actions/sw2', "1");
-      imagen1.src = img2;  
+      imagen2.src = img2;  
     } else {
       client.publish(device_topic + 'actions/sw2', "0");
-      imagen1.src = img1;
+      imagen2.src = img1;
     }
   }
 
@@ -649,10 +649,10 @@
     var imagen3 = document.getElementById('icono3');
     if ($('#display_sw3').is(":checked")) {
       client.publish(device_topic + 'actions/sw3', "1");
-      imagen1.src = img2;
+      imagen3.src = img2;
     } else {
       client.publish(device_topic + 'actions/sw3', "0");
-      imagen1.src = img1;
+      imagen3.src = img1;
     }
   }
 
