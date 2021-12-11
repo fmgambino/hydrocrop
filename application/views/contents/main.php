@@ -219,34 +219,37 @@
               <ul class="mdl-list">
                 <li class="mdl-list__item">
                   <span class="mdl-list__item-primary-content list__item-text">BOMBA DE AGUA</span>
-                  <span class="mdl-list__item-secondary-content">
+                  <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
                     <!-- SWITCH-->
                     <label class="switch">
                       <input onchange="sw1_change()" type="checkbox" id="display_sw1">
                       <span class="slider round"></span>
-                    </label>
+                    </label>                    
                   </span>
+                  <img src="<?php echo base_url('images/cancel.png')?>" class="hc-icono" id="icono1" alt="">
                 </li>
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
-                  <span class="mdl-list__item-secondary-content">
+                  <span class="mdl-list__item-secondary-content " style="padding-top: 6px;">
                     <!-- SWITCH-->
                     <label class="switch">
                       <input onchange="sw2_change()" type="checkbox" id="display_sw2">
                       <span class="slider round"></span>
                     </label>
                   </span>
+                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono" id="icono2" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">DIFUSOR C02</span>
-                  <span class="mdl-list__item-secondary-content">
+                  <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
                     <!-- SWITCH-->
                     <label class="switch">
                       <input onchange="sw3_change()" type="checkbox" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
                   </span>
+                  <img src="<?php echo base_url('images/cancel.png')?>"  class="hc-icono" id="icono3" alt="">
                 </li>
 
                 <li class="mdl-list__item list__item--border-top">
@@ -575,6 +578,8 @@
       $("#display_ph").html(ph);
       $("#display_cdtv").html(cdtv);
 
+      var img1 = "<?php echo base_url('images/cancel.png')?>";
+      var img2 = "<?php echo base_url('images/check.png')?>" ;
 
       if (niv == 1) {
         $("#display_niv").html("ALTO");
@@ -582,10 +587,16 @@
         $("#display_niv").html("OPTIMO");
       }
 
-      if (switch1 == "1") {
+      if (switch1 == "1") {   
+        console.log("ingrese en if shitch1");     
         $("#display_sw1").prop('checked', true);
+        var imagen1 = document.getElementById('icono1');
+        imagen1.src = img2;
+        console.log("cambio imagen 1 por imagen 2");
       } else {
         $("#display_sw1").prop('checked', "");
+        imagen1.src = img1;
+        console.log("cambio imagen 2 por imagen 1");
       }
 
       if (switch2 == "1") {
@@ -613,16 +624,22 @@
   client.on('error', (error) => {
     console.log('Connect Error:', error);
   })
+  
+  
 
   function sw1_change() {
+    console.log("ingrese a change 1");
     if ($('#display_sw1').is(":checked")) {
-      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker
+      client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker 
+      console.log("cambio imagen 1 por imagen 2");     
     } else {
       client.publish(device_topic + 'actions/sw1', "0");
+      console.log("cambio imagen 2 por imagen 1");
     }
   }
 
   function sw2_change() {
+    
     if ($('#display_sw2').is(":checked")) {
       client.publish(device_topic + 'actions/sw2', "1");
     } else {
@@ -631,6 +648,7 @@
   }
 
   function sw3_change() {
+    
     if ($('#display_sw3').is(":checked")) {
       client.publish(device_topic + 'actions/sw3', "1");
     } else {
