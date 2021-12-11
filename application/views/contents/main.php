@@ -552,12 +552,65 @@
 
     })
   })
-  var estado = "1";
-  var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
-  var img4 = "<?php echo base_url('images/checkblanco.png') ?>";
-  console.log("asigno estado = 1");
-  if(estado == "1"){
-     
+
+  client.on('message', (topic, message) => {
+    console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
+
+    if (topic == device_topic + "data") {
+      var splitted = message.toString().split(",");
+
+      var co2 = splitted[0];
+      var tempamb = splitted[1];
+      var hum = splitted[2];
+      var ph = splitted[3];
+      var niv = splitted[4];
+
+
+      var switch1 = splitted[5];
+      var switch2 = splitted[6];
+      var switch3 = splitted[7];
+      var cdtv = splitted[8];
+
+      var estado1 = splitted[9];;
+      var estado2 = splitted[10];
+      var estado3 = splitted[11];
+
+
+      $("#display_co2").html(co2);
+      $("#display_tempamb").html(tempamb);
+      $("#display_hum").html(hum);
+      $("#display_ph").html(ph);
+      $("#display_cdtv").html(cdtv);
+
+
+
+      if (niv == 1) {
+        $("#display_niv").html("ALTO");
+      } else {
+        $("#display_niv").html("OPTIMO");
+      }
+
+      if (switch1 == "1") {
+        $("#display_sw1").prop('checked', true);
+
+      } else {
+        $("#display_sw1").prop('checked', "");
+      }
+
+      if (switch2 == "1") {
+        $("#display_sw2").prop('checked', true);
+      } else {
+        $("#display_sw2").prop('checked', "");
+      }
+
+      if (switch3 == "1") {
+        $("#display_sw3").prop('checked', true);
+      } else {
+        $("#display_sw3").prop('checked', "");
+      }
+
+      var img3 = "<?php echo base_url('images/cancelblanco.png') ?>";
+      var img4 = "<?php echo base_url('images/checkblanco.png') ?>";      
 
       var imagen4 = document.getElementById('icono1');
       var imagen5 = document.getElementById('icono2');
@@ -596,67 +649,7 @@
         imagen6.classList.remove("hc-icono-check");
         imagen6.classList.add("hc-icono-cancel");
       }
-  }
 
-
-
-  client.on('message', (topic, message) => {
-    console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
-
-    if (estado == "1") { //if (topic == device_topic + "data") {
-      var splitted = message.toString().split(",");
-
-      var co2 = splitted[0];
-      var tempamb = splitted[1];
-      var hum = splitted[2];
-      var ph = splitted[3];
-      var niv = splitted[4];
-
-
-      var switch1 = splitted[5];
-      var switch2 = splitted[6];
-      var switch3 = splitted[7];
-      var cdtv = splitted[8];
-
-      var estado1 = "1";
-      var estado2 = splitted[10];
-      var estado3 = splitted[11];
-
-
-      $("#display_co2").html(co2);
-      $("#display_tempamb").html(tempamb);
-      $("#display_hum").html(hum);
-      $("#display_ph").html(ph);
-      $("#display_cdtv").html(cdtv);
-
-
-
-      if (niv == 1) {
-        $("#display_niv").html("ALTO");
-      } else {
-        $("#display_niv").html("OPTIMO");
-      }
-
-      if (switch1 == "1") {
-        $("#display_sw1").prop('checked', true);
-
-      } else {
-        $("#display_sw1").prop('checked', "");
-      }
-
-      if (switch2 == "1") {
-        $("#display_sw2").prop('checked', true);
-      } else {
-        $("#display_sw2").prop('checked', "");
-      }
-
-      if (switch3 == "1") {
-        $("#display_sw3").prop('checked', true);
-      } else {
-        $("#display_sw3").prop('checked', "");
-      }
-
-      
     }
 
 
@@ -676,11 +669,13 @@
   function sw1_change() {
     var imagen1 = document.getElementById('icono1');
     if ($('#display_sw1').is(":checked")) {
+      console.log("ingrese en sw1_change ok");
       client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker             
       imagen1.src = img2;
       imagen1.classList.remove("hc-icono-cancel");
       imagen1.classList.add("hc-icono-check");
     } else {
+      console.log("ingrese en sw1_change else");
       client.publish(device_topic + 'actions/sw1', "0");
       imagen1.src = img1;
       imagen1.classList.remove("hc-icono-check");
