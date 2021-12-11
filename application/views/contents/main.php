@@ -619,8 +619,8 @@
     console.log('Connect Error:', error);
   })
   
-  var img1 = "<?php echo base_url('images/cancel.png')?>";
-  var img2 = "<?php echo base_url('images/check.png')?>" ;
+  var img1 = "<?php echo base_url('images/cancelblanco.png')?>";
+  var img2 = "<?php echo base_url('images/checkblanco.png')?>" ;
 
   function sw1_change() {
     console.log("ingrese a change 1");

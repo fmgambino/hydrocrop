@@ -308,14 +308,12 @@ canvas{
 }
 
 .hc-icono-check{
-    transition-duration: 2s;
-    background-color: #2DE14F;
+    transition-duration: 2s;    
     font-size: 35px !important;    
     filter: invert(1);    
 }
 .hc-icono-cancel{
-    transition-duration: 2s;
-    background-color: #2DE14F;
+    transition-duration: 2s;    
     font-size: 35px !important;    
     filter: invert(1);    
 }
