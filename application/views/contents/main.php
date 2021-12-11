@@ -252,7 +252,7 @@
                 <li class="mdl-list__item list__item--border-top">
                   <span class="mdl-list__item-primary-content list__item-text">LUCES UV</span>
                   <span class="mdl-list__item-secondary-content">
-                    <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="12" tabindex="0">
+                    <input onchange="slider_change()" id="display_slider" class="mdl-slider mdl-js-slider slider--colored-light-blue" type="range" min="0" max="254" value="100" tabindex="0">
                   </span>
 
                 </li>
@@ -264,7 +264,7 @@
                 <form id="formulario">
                   <li class="mdl-list__item list__item--border-top row hc-hover">
                     <div class="col-12 text-center mb-3">
-                      <span class="">TEMPERATURA</span>
+                      <span class="">TEMPERATURA en °C</span>
                     </div>
                     <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
@@ -280,7 +280,7 @@
 
                   <li class="mdl-list__item list__item--border-top row hc-hover">
                     <div class="col-12 text-center mb-3">
-                      <span class="">HUMEDAD</span>
+                      <span class="">HUMEDAD en %</span>
                     </div>
                     <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
@@ -296,7 +296,7 @@
 
                   <li class="mdl-list__item list__item--border-top row hc-hover">
                     <div class="col-12 text-center mb-3">
-                      <span class="">CO2</span>
+                      <span class="">CO2 en PPM</span>
                     </div>
                     <div class="col-6">
                       <span class="mdl-list__item-secondary-content">
