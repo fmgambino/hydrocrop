@@ -553,7 +553,7 @@
     })
   })
   var estado = "1";
-
+  console.log("asigno estado = 1");
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
