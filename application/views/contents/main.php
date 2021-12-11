@@ -221,7 +221,7 @@
                   <span class="mdl-list__item-primary-content list__item-text">BOMBA DE AGUA</span>
                   <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
                     <!-- SWITCH-->
-                    <label class="switch">
+                    <label class="switch mr-2">
                       <input onchange="sw1_change()" type="checkbox" id="display_sw1">
                       <span class="slider round"></span>
                     </label>                    
@@ -232,7 +232,7 @@
                   <span class="mdl-list__item-primary-content list__item-text">EXTRACTORES</span>
                   <span class="mdl-list__item-secondary-content " style="padding-top: 6px;">
                     <!-- SWITCH-->
-                    <label class="switch">
+                    <label class="switch mr-2">
                       <input onchange="sw2_change()" type="checkbox" id="display_sw2">
                       <span class="slider round"></span>
                     </label>
@@ -244,7 +244,7 @@
                   <span class="mdl-list__item-primary-content list__item-text">DIFUSOR C02</span>
                   <span class="mdl-list__item-secondary-content" style="padding-top: 6px;">
                     <!-- SWITCH-->
-                    <label class="switch">
+                    <label class="switch mr-2">
                       <input onchange="sw3_change()" type="checkbox" id="display_sw3">
                       <span class="slider round"></span>
                     </label>
