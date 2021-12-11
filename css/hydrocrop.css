@@ -309,12 +309,14 @@ canvas{
 
 .hc-icono-check{
     background-color: #2196f3;
+    border-radius: 100%;
     transition-duration: 2s;    
     font-size: 35px !important;  
        
 }
 .hc-icono-cancel{
     background-color: #cccccc;
+    border-radius: 100%;
     transition-duration: 2s;    
     font-size: 35px !important;   
         
