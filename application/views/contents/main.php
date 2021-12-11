@@ -627,10 +627,14 @@
     var imagen1 = document.getElementById('icono1');
     if ($('#display_sw1').is(":checked")) {
       client.publish(device_topic + 'actions/sw1', "1"); //Valor que envio al broker             
-      imagen1.src = img2;      
+      imagen1.src = img2;
+      imagen1.classList.remove("hc-icono-cancel");
+      imagen1.classList.add("hc-icono-check");
     } else {
       client.publish(device_topic + 'actions/sw1', "0");
-      imagen1.src = img1;     
+      imagen1.src = img1; 
+      imagen1.classList.remove("hc-icono-check");
+      imagen1.classList.add("hc-icono-cancel");
     }
   }
 

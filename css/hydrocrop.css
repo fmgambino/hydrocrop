@@ -308,11 +308,13 @@ canvas{
 }
 
 .hc-icono-check{
+    background-color: #2196f3;
     transition-duration: 2s;    
     font-size: 35px !important;  
        
 }
 .hc-icono-cancel{
+    background-color: #cccccc;
     transition-duration: 2s;    
     font-size: 35px !important;   
         
