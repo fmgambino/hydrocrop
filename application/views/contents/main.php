@@ -534,8 +534,8 @@
       if(contCo2 == 1){
         co2 = numEntero
       }
-      if(contCo2 == 5){
-        co2 = sumadorA / 5;
+      if(contCo2 == 10){
+        co2 = sumadorA / 10;
         contCo2 = 0;
         sumadorA = 0;
         console.log("valor promedio de co2 calculado");
@@ -548,7 +548,7 @@
       if(contcdtv == 1){
         cdtv = numcdtv ;
       }
-      if(contcdtv == 5){
+      if(contcdtv == 10){
         cdtv = sumadorB / 5;
         contcdtv = 0;
         sumadorB = 0;
