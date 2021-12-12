@@ -503,7 +503,7 @@
   $contCo2 = 0;
   $sumadorA = 0;
   $co2;
-  
+
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
@@ -527,13 +527,13 @@
       var estado3 = splitted[11];
 
       $sumadorCo2 = sumCo2;
-      sumadorA = sumadorA + sumadorCo2;
-      contCo2++;
-      if(contCo2 == 5){
-        co2 = sumadorA / 5;
-        contCo2 = 0;
-        sumadorA = 0;
-        console.log("valor promedio de co2 calculado");
+      $sumadorA = $sumadorA + $sumadorCo2;
+      $contCo2++;
+      if($contCo2 == 5){
+        $co2 = $sumadorA / 5;
+        $contCo2 = 0;
+        $sumadorA = 0;
+        $console.log("valor promedio de co2 calculado");
       }
 
       $("#display_co2").html(co2);
