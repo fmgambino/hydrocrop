@@ -543,13 +543,13 @@
       }
 
       var numcdtv = parseFloat(sumcdtv);      
-      sumadorA = sumadorA + numcdtv;
+      sumadorB = sumadorB + numcdtv;
       contcdtv++;
       if(contcdtv == 1){
         cdtv = numcdtv
       }
       if(contcdtv == 5){
-        cdtv = sumadorA / 5;
+        cdtv = sumadorB / 5;
         contcdtv = 0;
         sumadorB = 0;
         console.log("valor promedio de cdtv calculado");
