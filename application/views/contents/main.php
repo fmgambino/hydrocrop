@@ -72,7 +72,7 @@
             </div>
             <div class="mdl-card__supporting-text mdl-card--expand row hc-contenedor" style="">
               <p id="display_co2" class="hc-valor weather-temperature ">--<sup>&deg;</sup></p>
-              <h1 class="hc-unidades">PPM</h1>              
+              <h1 class="hc-unidades">PPM</h1>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
             <div class="hc-contenedor row">
               <p id="display_cdtv" class="weather-temperature hc-valor ">--</p>
               <h1 class="hc-unidades">uS/cm</h1>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -504,7 +504,7 @@
   var contcdtv = 0;
   var sumadorA = 0;
   var sumadorB = 0;
-  var co2,cdtv;
+  var co2, cdtv;
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
@@ -528,13 +528,13 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      var numEntero = parseInt(sumco2);      
+      var numEntero = parseInt(sumco2);
       sumadorA = sumadorA + numEntero;
       contCo2++;
-      if(contCo2 == 1){
+      if (contCo2 == 1) {
         co2 = numEntero
       }
-      if(contCo2 == 10){
+      if (contCo2 == 10) {
         co2 = sumadorA / 10;
         contCo2 = 0;
         sumadorA = 0;
@@ -542,20 +542,23 @@
         console.log(co2);
       }
 
-      var numcdtv = parseFloat(sumcdtv) * 1000;      
-      sumadorB = sumadorB + numcdtv;
-      contcdtv++;
-      if(contcdtv == 1){
-        cdtv = numcdtv ;
+      var numcdtv = parseFloat(sumcdtv) * 1000;
+      console.log("valor de cdtv ");
+      console.log(numcdtv);
+      if (numcdtv != "NaN") {
+        sumadorB = sumadorB + numcdtv;
+        contcdtv++;
+        if (contcdtv == 1) {
+          cdtv = numcdtv;
+        }
+        if (contcdtv == 10) {
+          cdtv = sumadorB / 5;
+          contcdtv = 0;
+          sumadorB = 0;
+          console.log("valor promedio de cdtv calculado");
+          console.log(cdtv);
+        }
       }
-      if(contcdtv == 10){
-        cdtv = sumadorB / 5;
-        contcdtv = 0;
-        sumadorB = 0;
-        console.log("valor promedio de cdtv calculado");
-        console.log(cdtv);
-      }
-
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
