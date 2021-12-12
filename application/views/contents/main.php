@@ -99,7 +99,7 @@
               <i class="material-icons">bolt</i>
             </div>
             <div class="hc-contenedor">
-              <p id="display_cdtv" class="weather-temperature hc-valor">--</p>
+              <p id="display_cdtv" class="weather-temperature hc-valor row">--</p>
               <h1 class="hc-unidades">uS/cm</h1>
             </div>            
           </div>
