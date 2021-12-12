@@ -203,6 +203,10 @@ main {
     margin: auto;
     padding-right: 40px;
 }
+
+.weather-temperature{
+    font-size: 80px !important;
+}
 /*----------------------------------*/
 canvas{
     padding-right: 20px;
