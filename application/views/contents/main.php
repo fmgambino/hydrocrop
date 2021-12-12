@@ -179,7 +179,7 @@
               </li>
 
               <div class="mdl-card__title ">
-                <h2 class="mdl-card__title-text">Parametros </h2>
+                <h2 class="mdl-card__title-text">Parámetro </h2>
               </div>
 
               <form id="formulario">
@@ -256,7 +256,7 @@
         <div class="">
           <div class="mdl-card mdl-shadow--2dp line-chart">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text hc-color-text-naranja">Nivel CO2</h2>
+              <h2 class="mdl-card__title-text hc-color-text-gris">Nivel CO2</h2>
             </div>
             <div class="mdl-card__supporting-text">
               <canvas id="my_chart" width="300" height="300"></canvas>
@@ -270,7 +270,7 @@
         <div class="">
           <div class="mdl-card mdl-shadow--2dp line-chart">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text hc-color-text-naranja">Tem. Hambiente</h2>
+              <h2 class="mdl-card__title-text hc-color-text-naranja">Tem. Ambiente</h2>
             </div>
             <div class="mdl-card__supporting-text">
               <canvas id="my_chart2" width="300" height="300"></canvas>
