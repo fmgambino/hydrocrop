@@ -179,7 +179,7 @@
               </li>
 
               <div class="mdl-card__title ">
-                <h2 class="mdl-card__title-text">Parámetro </h2>
+                <h2 class="mdl-card__title-text">Parámetros </h2>
               </div>
 
               <form id="formulario">
