@@ -525,7 +525,7 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      int numEntero = parseInt(sumco2,10);
+      var numEntero = parseInt(sumco2);
       console.log("valor numEntero");
         console.log(numEntero);
       /*sumadorA = sumadorA + numEntero;
