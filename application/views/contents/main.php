@@ -501,8 +501,8 @@
   })
 
   var contCo2 = 0;
-  var sumadorA = 0;
-  var co2;
+   sumadorA = 0;
+  $co2;
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
@@ -510,7 +510,7 @@
       var splitted = message.toString().split(",");
 
       var sumco2 = splitted[0];
-      var tempamb = splitted[1];
+      $tempamb = splitted[1];
       var hum = splitted[2];
       var ph = splitted[3];
       var niv = splitted[4];
