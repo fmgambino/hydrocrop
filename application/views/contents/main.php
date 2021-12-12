@@ -527,8 +527,8 @@
 
       sumadorA = sumadorA + sumco2;
       contCo2++;
-      if(contCo2 == 30){
-        co2 = sumadorA / 30;
+      if(contCo2 == 5){
+        co2 = sumadorA / 5;
         contCo2 = 0;
         sumadorA = 0;
         console.log("valor promedio de co2 calculado");
