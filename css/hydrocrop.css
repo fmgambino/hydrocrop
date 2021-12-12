@@ -188,6 +188,20 @@ main {
     max-width: 200px;
 }
 
+.hc-unidades{
+    width: 20%;    
+    margin-left: -20px !important;
+}
+
+.hc-valor{
+    width: 80%;
+}
+
+.hc-contenedor{
+    align-items: center;
+    margin: auto;
+    
+}
 /*----------------------------------*/
 canvas{
     padding-right: 20px;

@@ -68,9 +68,9 @@
               <i class="material-icons">local_fire_department</i>
               <div class="mdl-layout-spacer"></div>
             </div>
-            <div class="mdl-card__supporting-text mdl-card--expand row" style="align-items: center;">
-              <p id="display_co2" class="col-10 weather-temperature ">--<sup>&deg;</sup></p>
-              <h1 class="col-2">PPM</h1>              
+            <div class="mdl-card__supporting-text mdl-card--expand row hc-contenedor" style="">
+              <p id="display_co2" class="hc-valor weather-temperature ">--<sup>&deg;</sup></p>
+              <h1 class="hc-unidades">PPM</h1>              
             </div>
           </div>
         </div>
