@@ -200,7 +200,7 @@ main {
 .hc-contenedor{
     align-items: center;
     margin: auto;
-    
+    padding-right: 30px;
 }
 /*----------------------------------*/
 canvas{
