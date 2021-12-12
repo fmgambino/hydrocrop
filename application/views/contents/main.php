@@ -542,6 +542,8 @@
         console.log(co2);
       }
 
+      console.log("valor que llega de conductividad");
+      console.log(sumcdtv);
       var numcdtv = parseFloat(sumcdtv) * 1000;
       console.log("valor de cdtv ");
       console.log(numcdtv);
