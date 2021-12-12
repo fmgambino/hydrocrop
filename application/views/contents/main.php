@@ -286,7 +286,6 @@
   </div>
 </main>
 <script type="text/javascript">
-  
   var css_file = document.createElement("link");
   var widgetUrl = location.href;
   css_file.setAttribute("rel", "stylesheet");
@@ -501,9 +500,9 @@
     })
   })
 
-  
-  //var contCo2 = 0;
-  //var sumadorA = 0;
+  $contCo2 = 0;
+  $sumadorA = 0;
+  $co2;
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
@@ -511,7 +510,7 @@
     if (topic == device_topic + "data") {
       var splitted = message.toString().split(",");
 
-      var co2 = splitted[0];
+      var sumco2 = splitted[0];
       var tempamb = splitted[1];
       var hum = splitted[2];
       var ph = splitted[3];
@@ -527,16 +526,15 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      /*int sumadorCo2 = Integer.parseInt(sumCo2);
-      sumadorA = sumadorA + sumadorCo2;
-      contCo2++;
-      console.log("valor asdasdasdas");
-      if(contCo2 == 5){
-        String co2 = String.valueOf(sumadorA / 5);
-        contCo2 = 0;
-        sumadorA = 0;
+      $sumadorCo2 = sumCo2;
+      $sumadorA = $sumadorA + $sumadorCo2;
+      $contCo2++;
+      if($contCo2 == 5){
+        $co2 = $sumadorA / 5;
+        $contCo2 = 0;
+        $sumadorA = 0;
         console.log("valor promedio de co2 calculado");
-      }*/
+      }
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
