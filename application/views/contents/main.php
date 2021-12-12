@@ -561,7 +561,7 @@
 
 
 
-      if (niv == 1) {
+      if (niv == 0) {
         $("#display_niv").html("ALTO");
       } else {
         $("#display_niv").html("OPTIMO");
