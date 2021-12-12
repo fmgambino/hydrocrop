@@ -98,7 +98,10 @@
               <h2 class="mdl-card__title-text">Conductividad</h2>
               <i class="material-icons">bolt</i>
             </div>
-            <p id="display_cdtv" class="weather-temperature">--</p><h1>PPM</h1>
+            <div class="hc-contenedor">
+              <p id="display_cdtv" class="weather-temperature hc-valor">--</p>
+              <h1 class="hc-unidades">uS/cm</h1>
+            </div>            
           </div>
         </div>
       </div>
