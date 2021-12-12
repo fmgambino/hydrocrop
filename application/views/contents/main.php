@@ -500,9 +500,9 @@
     })
   })
 
-  $contCo2 = 0;
-  $sumadorA = 0;
-  $co2;
+  int contCo2 = 0;
+  int sumadorA = 0;
+  
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
@@ -526,14 +526,14 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      $sumadorCo2 = sumCo2;
-      $sumadorA = $sumadorA + $sumadorCo2;
-      $contCo2++;
-      if($contCo2 == 5){
-        $co2 = $sumadorA / 5;
-        $contCo2 = 0;
-        $sumadorA = 0;
-        $console.log("valor promedio de co2 calculado");
+      int sumadorCo2 = Integer.parseInt(sumCo2);
+      sumadorA = sumadorA + sumadorCo2;
+      contCo2++;
+      if(contCo2 == 5){
+        String co2 = String.valueOf(sumadorA / 5);
+        contCo2 = 0;
+        sumadorA = 0;
+        console.log("valor promedio de co2 calculado");
       }
 
       $("#display_co2").html(co2);
