@@ -286,6 +286,10 @@
   </div>
 </main>
 <script type="text/javascript">
+
+int contCo2 = 0;
+  int sumadorA = 0;
+
   var css_file = document.createElement("link");
   var widgetUrl = location.href;
   css_file.setAttribute("rel", "stylesheet");
@@ -500,8 +504,7 @@
     })
   })
 
-  int contCo2 = 0;
-  int sumadorA = 0;
+  
   
 
   client.on('message', (topic, message) => {
