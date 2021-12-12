@@ -53,7 +53,7 @@
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text ">Humedad %</h2>
             </div>
-            <div class="mdl-card__supporting-text mdl-card--expand hc-contenedor">
+            <div class="mdl-card__supporting-text mdl-card--expand hc-contenedor row">
               <p id="display_hum" class="weather-temperature hc-valor">--</p>
               <h1 class="hc-unidades">%</h1>
             </div>
