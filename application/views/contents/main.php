@@ -532,6 +532,7 @@
         contCo2 = 0;
         sumadorA = 0;
         console.log("valor promedio de co2 calculado");
+        console.log(co2);
       }
 
       $("#display_co2").html(co2);
