@@ -542,11 +542,11 @@
         console.log(co2);
       }
 
-      var numcdtv = parseFloat(sumcdtv);      
+      var numcdtv = parseFloat(sumcdtv) * 1000;      
       sumadorB = sumadorB + numcdtv;
       contcdtv++;
       if(contcdtv == 1){
-        cdtv = numcdtv
+        cdtv = numcdtv ;
       }
       if(contcdtv == 5){
         cdtv = sumadorB / 5;
