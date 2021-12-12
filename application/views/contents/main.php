@@ -502,7 +502,7 @@
 
   var contCo2 = 0;
   var sumadorA = 0;
-  $co2;
+  var co2;
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
