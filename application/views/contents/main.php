@@ -525,10 +525,8 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      var numEntero = parseInt(sumco2);
-      console.log("valor numEntero");
-        console.log(numEntero);
-      /*sumadorA = sumadorA + numEntero;
+      var numEntero = parseInt(sumco2);      
+      sumadorA = sumadorA + numEntero;
       contCo2++;
       if(contCo2 == 5){
         co2 = sumadorA / 5;
@@ -536,7 +534,7 @@
         sumadorA = 0;
         console.log("valor promedio de co2 calculado");
         console.log(co2);
-      }*/
+      }
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
