@@ -500,9 +500,10 @@
     })
   })
 
-  var contCo2 = 0;
-   sumadorA = 0;
+  $contCo2 = 0;
+  $sumadorA = 0;
   $co2;
+  
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
@@ -510,7 +511,7 @@
       var splitted = message.toString().split(",");
 
       var sumco2 = splitted[0];
-      $tempamb = splitted[1];
+      var tempamb = splitted[1];
       var hum = splitted[2];
       var ph = splitted[3];
       var niv = splitted[4];
@@ -525,7 +526,8 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      sumadorA = sumadorA + sumco2;
+      $sumadorCo2 = sumCo2;
+      sumadorA = sumadorA + sumadorCo2;
       contCo2++;
       if(contCo2 == 5){
         co2 = sumadorA / 5;
