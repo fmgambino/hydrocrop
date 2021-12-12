@@ -69,7 +69,7 @@
               <div class="mdl-layout-spacer"></div>
             </div>
             <div class="mdl-card__supporting-text mdl-card--expand row" style="align-items: center;">
-              <p id="display_co2" class="col'10 weather-temperature ">--<sup>&deg;</sup></p>
+              <p id="display_co2" class="col-10 weather-temperature ">--<sup>&deg;</sup></p>
               <h1 class="col-2">PPM</h1>              
             </div>
           </div>
