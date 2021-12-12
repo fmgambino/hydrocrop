@@ -501,8 +501,11 @@
   })
 
   var contCo2 = 0;
+  var contcdtv = 0;
   var sumadorA = 0;
-  var co2;
+  var sumadorB = 0;
+  var co2,cdtv;
+
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
@@ -519,7 +522,7 @@
       var switch1 = splitted[5];
       var switch2 = splitted[6];
       var switch3 = splitted[7];
-      var cdtv = splitted[8];
+      var sumcdtv = splitted[8];
 
       var estado1 = splitted[9];;
       var estado2 = splitted[10];
@@ -528,6 +531,9 @@
       var numEntero = parseInt(sumco2);      
       sumadorA = sumadorA + numEntero;
       contCo2++;
+      if(contCo2 == 1){
+        co2 = numEntero
+      }
       if(contCo2 == 5){
         co2 = sumadorA / 5;
         contCo2 = 0;
@@ -535,6 +541,21 @@
         console.log("valor promedio de co2 calculado");
         console.log(co2);
       }
+
+      var numcdtv = parseInt(sumcdtv);      
+      sumadorA = sumadorA + numcdtv;
+      contcdtv++;
+      if(contcdtv == 1){
+        cdtv = numcdtv
+      }
+      if(contcdtv == 5){
+        cdtv = sumadorA / 5;
+        contcdtv = 0;
+        sumadorB = 0;
+        console.log("valor promedio de cdtv calculado");
+        console.log(cdtv);
+      }
+
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
