@@ -500,13 +500,16 @@
     })
   })
 
+  var contCo2 = 0;
+  var sumadorA = 0;
+
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
 
     if (topic == device_topic + "data") {
       var splitted = message.toString().split(",");
 
-      var co2 = splitted[0];
+      var sumco2 = splitted[0];
       var tempamb = splitted[1];
       var hum = splitted[2];
       var ph = splitted[3];
@@ -522,6 +525,14 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
+      sumadorA = sumadorA + sumco2;
+      contCo2++;
+      if(contCo2 == 30){
+        co2 = sumadorA / 30;
+        contCo2 = 0;
+        sumadorA = 0;
+        console.log("valor promedio de co2 calculado", float co2 );
+      }
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
