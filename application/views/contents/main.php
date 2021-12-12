@@ -525,7 +525,8 @@
       var estado2 = splitted[10];
       var estado3 = splitted[11];
 
-      sumadorA = sumadorA + sumco2;
+      int numEntero = Integer.parseInt(sumco2);
+      sumadorA = sumadorA + numEntero;
       contCo2++;
       if(contCo2 == 5){
         co2 = sumadorA / 5;
