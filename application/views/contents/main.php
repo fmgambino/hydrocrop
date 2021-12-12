@@ -529,6 +529,7 @@
       int sumadorCo2 = Integer.parseInt(sumCo2);
       sumadorA = sumadorA + sumadorCo2;
       contCo2++;
+      console.log("valor asdasdasdas");
       if(contCo2 == 5){
         String co2 = String.valueOf(sumadorA / 5);
         contCo2 = 0;
