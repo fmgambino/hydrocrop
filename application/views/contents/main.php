@@ -542,7 +542,7 @@
         console.log(co2);
       }
 
-      var numcdtv = parseInt(sumcdtv);      
+      var numcdtv = parseFloat(sumcdtv);      
       sumadorA = sumadorA + numcdtv;
       contcdtv++;
       if(contcdtv == 1){
