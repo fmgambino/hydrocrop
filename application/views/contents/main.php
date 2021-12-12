@@ -531,7 +531,7 @@
         co2 = sumadorA / 30;
         contCo2 = 0;
         sumadorA = 0;
-        console.log("valor promedio de co2 calculado", float co2 );
+        console.log("valor promedio de co2 calculado");
       }
 
       $("#display_co2").html(co2);
