@@ -195,12 +195,13 @@ main {
 
 .hc-valor{
     width: 80%;
+    padding-left: 30px;
 }
 
 .hc-contenedor{
     align-items: center;
     margin: auto;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 /*----------------------------------*/
 canvas{
