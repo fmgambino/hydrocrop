@@ -40,8 +40,9 @@
               <h2 class="mdl-card__title-text">Temperatura</h2>
               <i class="material-icons">thermostat</i>
             </div>
-            <div class="mdl-card__supporting-text mdl-card--expand">
-              <p id="display_tempamb" class="weather-temperature">--<sup>&deg;</sup></p>
+            <div class="mdl-card__supporting-text mdl-card--expand hc-contenedor row">
+              <p id="display_tempamb" class="weather-temperature  hc-valor">--<sup>&deg;</sup></p>
+              <h1 class="hc-unidades">°C</h1>
             </div>
           </div>
         </div>
