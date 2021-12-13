@@ -531,7 +531,9 @@
       var numEntero = parseInt(sumco2);
       sumadorA = sumadorA + numEntero;
       contCo2++;
-      
+      if (contCo2 == 1) {
+        co2 = numEntero
+      }
       if (contCo2 == 10) {
         co2 = sumadorA / 10;
         contCo2 = 0;
@@ -548,7 +550,9 @@
       if (numcdtv != "NaN") {
         sumadorB = sumadorB + numcdtv;
         contcdtv++;
-        
+        if (contcdtv == 1) {
+          cdtv = numcdtv;
+        }
         if (contcdtv == 10) {
           cdtv = sumadorB / 10;
           contcdtv = 0;
