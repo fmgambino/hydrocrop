@@ -555,8 +555,8 @@
         if (contcdtv == 1) {
           cdtv = numcdtv;
         }
-        if (contcdtv == 10) {
-          cdtv = sumadorB / 10;
+        if (contcdtv == 5) {
+          cdtv = sumadorB / 5;
           contcdtv = 0;
           sumadorB = 0;
           console.log("valor promedio de cdtv calculado");
