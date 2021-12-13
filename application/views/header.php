@@ -29,7 +29,7 @@
         <!-- Search-->
 
         <select id="device_select" class="btn btn-outline-dark hc-selectdevice " style="" onchange="change_device()" class="" name="">
-            <option value="">Select Device</option>
+            <option value="">Selecione Dispositivo</option>
             <?php foreach ($devices as $device) { ?>
                 <option value="<?php echo $device['device_id'] ?>" <?php if ($_SESSION['selected_device'] == $device['device_id']) {
                                                                         echo "selected";

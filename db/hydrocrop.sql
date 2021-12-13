@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u959710636_flacuariot`
+-- Database: `u959710636_hycrocrop`
 --
 
 -- --------------------------------------------------------
@@ -110,9 +110,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `fb_user`, `user_date`, `user_name`, `user_email`, `user_password`, `user_image`, `user_selected_device`) VALUES
 (1, NULL, '2021-03-03 16:24:57', 'Martin Frith', 'overlemonsoft@gmail.com', 'b99d456223d9a1c2ff7d023caded23fda384c5cd', 'https://cdn1.iconfinder.com/data/icons/avatars-vol-2/140/_robocop-512.png', NULL),
-(2, NULL, '2021-03-03 16:32:30', 'Fulanito', 'demo@demo.com', 'ea7addf05e61754962268a1f44d4f33079249326', 'https://flacuariot.com/app/images/Cosme.png', 13),
+(2, NULL, '2021-03-03 16:32:30', 'Fulanito', 'demo@demo.com', 'ea7addf05e61754962268a1f44d4f33079249326', 'https://hydrocrop.net/app/images/Cosme.png', 13),
 (4, NULL, '2021-04-25 00:14:47', 'Alfredo Rodolfo Fernandez', 'alfred34894@gmail.com', 'a90b5c30b4a02099676d1d49a08b7788c2125faf', 'https://cdn1.iconfinder.com/data/icons/avatars-vol-2/140/_robocop-512.png', NULL),
-(5, NULL, '2021-05-20 17:06:05', 'FMG', 'fernando.m.gambino@gmail.com', 'a9f9cc0b46b69c9e60bbd6e25423d46a0af42837', 'https://flacuariot.com/app/images/RUSTY-S19-HOR-OP3-1024x724-1.jpg', 9),
+(5, NULL, '2021-05-20 17:06:05', 'FMG', 'fernando.m.gambino@gmail.com', 'a9f9cc0b46b69c9e60bbd6e25423d46a0af42837', 'https://hydrocrop.net/app/images/RUSTY-S19-HOR-OP3-1024x724-1.jpg', 9),
 (6, NULL, '2021-09-03 02:07:26', 'Test', 'test@test', '7c222fb2927d828af22f592134e8932480637c0d', 'https://cdn1.iconfinder.com/data/icons/avatars-vol-2/140/_robocop-512.png', 14),
 (7, NULL, '2021-09-03 02:18:13', 'CostaRica', 'admin@iotcostarica.ml', '8b45bb7616f8239acaf1e31c585f141d251fba0b', 'https://cdn1.iconfinder.com/data/icons/avatars-vol-2/140/_robocop-512.png', NULL);
 
