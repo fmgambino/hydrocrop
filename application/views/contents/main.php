@@ -549,15 +549,16 @@
       var numcdtv = parseFloat(sumcdtv);
       console.log("valor de cdtv ");
       console.log(numcdtv);
+      if (contcdtv == 0) {
+          cdtv = numcdtv;
+        }
       if (numcdtv != "NaN") {
         sumadorB = sumadorB + numcdtv;
         contcdtv++;
-        if (contcdtv == 1) {
-          cdtv = numcdtv;
-        }
-        if (contcdtv == 10) {
-          cdtv = sumadorB / 10;
-          contcdtv = 0;
+        
+        if (contcdtv == 11) {
+          cdtv = sumadorB / 11;
+          contcdtv = 1;
           sumadorB = 0;
           console.log("valor promedio de cdtv calculado");
           console.log(cdtv);
