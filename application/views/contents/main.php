@@ -544,7 +544,7 @@
 
       console.log("valor que llega de conductividad");
       console.log(sumcdtv);
-      var numcdtv = parseFloat(sumcdtv) * 1000;
+      var numcdtv = parseFloat(sumcdtv);
       console.log("valor de cdtv ");
       console.log(numcdtv);
       if (numcdtv != "NaN") {
