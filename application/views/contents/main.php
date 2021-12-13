@@ -576,7 +576,8 @@
         sumadorC = sumadorC + numph;
         contph++;        
         if (contph == 6) {
-          ph = sumadorC / 6;
+          var promph = sumadorC / 6;
+          ph = Math.round((promph + Number.EPSILON) * 100) / 100;
           contph = 1;
           sumadorC = 0;
           console.log("valor promedio de pH es");
