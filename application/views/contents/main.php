@@ -502,11 +502,11 @@
 
   var contCo2 = 0;
   var contcdtv = 0;
-  var contph = 0;
+  
   var sumadorA = 0;
   var sumadorB = 0;
   var sumadorC = 0;
-  var co2, cdtv, ph;
+  var co2, cdtv;
 
   client.on('message', (topic, message) => {
     console.log('Msg desde el topico: ', topic, ' ----> ', message.toString());
@@ -517,7 +517,7 @@
       var sumco2 = splitted[0];
       var tempamb = splitted[1];
       var hum = splitted[2];
-      var sumph = splitted[3];
+      var ph = splitted[3];
       var niv = splitted[4];
 
 
@@ -564,26 +564,7 @@
         }
       }
 
-      console.log("valor que llega de pH");
-      console.log(sumph);
-      var numph = parseFloat(sumph);
-      console.log("valor de ph en float");
-      console.log(numph);
-      if (contph == 0) {
-          ph = numph;
-        }
-      if (numph != "NaN") {
-        sumadorC = sumadorC + numph;
-        contph++;        
-        if (contph == 6) {
-          var promph = sumadorC / 6;
-          ph = Math.round((promph + Number.EPSILON) * 100) / 100;
-          contph = 1;
-          sumadorC = 0;
-          console.log("valor promedio de pH es");
-          console.log(ph);
-        }
-      }
+      
 
       $("#display_co2").html(co2);
       $("#display_tempamb").html(tempamb);
