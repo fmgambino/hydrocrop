@@ -44,7 +44,7 @@
 <body>
 
   <div class="mdl-layout mdl-js-layout color--gray is-small-screen login">
-    <center><span class="mdl-card__title-text text-color--smooth-gray">Autores: Zenteno - Gambino </span></center>
+    <center><span class="mdl-card__title-text text-color--smooth-gray">   by Electrónica Gambino </span></center>
 
     <main class="mdl-layout__content d-flex justify-content-center img-fluid">
     
@@ -60,7 +60,7 @@
               <center>
                 <div class="mdl-grid d-flex ">
                   <div class="col-12 mt-4">
-                    <span class="mdl-card__title-text  hc-color-text-negro">Proyecto Final - UTN-FRT</span>
+                    <span class="mdl-card__title-text  hc-color-text-negro">Sistema de Control y Monitoreo</span>
                   </div>
               </center>
               <div class="col-12  mt-4">
